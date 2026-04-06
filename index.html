@@ -75,13 +75,41 @@
     </div>
   </section>
 
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item anim-fade-in">
+          <div class="stats__number">10<span>+</span></div>
+          <div class="stats__label">lat doświadczenia</div>
+        </div>
+        <div class="stats__item anim-fade-in anim-delay-1">
+          <div class="stats__number">3</div>
+          <div class="stats__label">specjalizacje treningowe</div>
+        </div>
+        <div class="stats__item anim-fade-in anim-delay-2">
+          <div class="stats__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="stats__label">certyfikat trenera medycznego</div>
+        </div>
+        <div class="stats__item anim-fade-in anim-delay-3">
+          <div class="stats__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="stats__label">zawodnik men's physique</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- O MNIE -->
   <section class="about" id="o-mnie">
     <div class="container">
       <div class="about__grid">
         <div class="about__image-wrap anim-fade-in">
-          <div class="about__image-card">
-            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy">
+          <div class="about__image-card" id="aboutImageCard">
+            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" id="aboutPhoto">
           </div>
         </div>
         <div class="about__text anim-fade-in">
@@ -91,6 +119,12 @@
           <p>Posiadam <strong>certyfikat trenera medycznego</strong>, co pozwala mi bezpiecznie pracować z szerokim spektrum przypadków — od osób rozpoczynających przygodę z siłownią, przez ludzi po kontuzjach i z problemami zdrowotnymi, aż po tych, którzy po prostu potrzebują fachowego wsparcia na starcie.</p>
           <p>Specjalizuję się w <strong>treningu siłowym, ogólnorozwojowym i motorycznym pod sporty walki</strong>. Wśród moich podopiecznych znajdziesz zarówno osoby początkujące, jak i zaawansowanych sportowców, którzy chcą w pełni wykorzystać swój potencjał.</p>
           <p>Sam startuję w <strong>zawodach men's physique</strong>, więc doskonale rozumiem proces zaawansowanej redukcji i budowania formy. To praktyczna wiedza zdobyta na własnym doświadczeniu — wiem, co przynosi realne rezultaty.</p>
+          <div class="about__badges">
+            <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Certyfikat trenera medycznego</span>
+            <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Men's Physique</span>
+            <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg> Sporty walki</span>
+            <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> Siła &amp; motoryka</span>
+          </div>
         </div>
       </div>
     </div>
@@ -130,6 +164,50 @@
     </div>
   </section>
 
+  <!-- JAK TO DZIAŁA -->
+  <section class="process" id="jak-to-dziala">
+    <div class="container">
+      <div class="process__header anim-fade-in">
+        <span class="section-tag">Współpraca</span>
+        <h2 class="section-title">Jak to działa?</h2>
+        <p class="process__subtitle">Każda współpraca przebiega według sprawdzonego schematu, który gwarantuje realne efekty.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process__step anim-fade-in">
+          <div class="process__step-number">01</div>
+          <div class="process__step-content">
+            <h3>Trening diagnostyczny</h3>
+            <p>Pierwsze spotkanie — poznajemy się, sprawdzam Twój zakres ruchu, kondycję i omawiamy cele. Kosztuje tylko <strong>150 zł</strong> i jest podstawą dalszej współpracy.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step anim-fade-in anim-delay-1">
+          <div class="process__step-number">02</div>
+          <div class="process__step-content">
+            <h3>Indywidualny plan</h3>
+            <p>Na podstawie diagnostyki przygotowuję szczegółowy plan treningowy dopasowany do Twoich celów, możliwości i ewentualnych ograniczeń zdrowotnych.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step anim-fade-in anim-delay-2">
+          <div class="process__step-number">03</div>
+          <div class="process__step-content">
+            <h3>Regularne treningi</h3>
+            <p>Trenujemy razem 1, 2 lub 3 razy w tygodniu. Pilnuję techniki, dobieramy odpowiednie obciążenia i sukcesywnie podnosisz swój poziom.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step anim-fade-in anim-delay-3">
+          <div class="process__step-number">04</div>
+          <div class="process__step-content">
+            <h3>Monitoring i korekta</h3>
+            <p>Na bieżąco śledzę Twoje postępy i dostosowuję plan. Masz stały kontakt ze mną między sesjami — jesteś w najlepszych rękach.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CENNIK -->
   <section class="pricing" id="cennik">
     <div class="container">
@@ -144,28 +222,29 @@
           <div class="pricing__card-price">150 <span>zł</span></div>
           <p class="pricing__card-desc">Pierwsze spotkanie — poznajemy się, sprawdzam Twój zakres ruchu i omawiam cele. Na tej podstawie przygotowuję plan działania.</p>
         </div>
+        <div class="pricing__card anim-fade-in anim-delay-1">
+          <h3 class="pricing__card-title">Pojedynczy trening</h3>
+          <div class="pricing__card-price">200 <span>zł</span></div>
+          <p class="pricing__card-desc">Jednorazowa sesja, bez zobowiązań — jeśli chcesz po prostu spróbować.</p>
+        </div>
         <div class="pricing__card anim-fade-in">
           <h3 class="pricing__card-title">1× w tygodniu</h3>
           <div class="pricing__card-price">680 <span>zł/msc</span></div>
           <p class="pricing__card-per">4 treningi × 170 zł</p>
           <p class="pricing__card-desc">Jeden trening tygodniowo — dobry punkt wyjścia, jeśli dopiero zaczynasz lub trenujesz też samodzielnie.</p>
         </div>
-        <div class="pricing__card anim-fade-in">
+        <div class="pricing__card pricing__card--featured anim-fade-in anim-delay-1">
+          <div class="pricing__card-badge">Najpopularniejszy</div>
           <h3 class="pricing__card-title">2× w tygodniu</h3>
           <div class="pricing__card-price">1200 <span>zł/msc</span></div>
           <p class="pricing__card-per">8 treningów × 150 zł</p>
           <p class="pricing__card-desc">Dwa treningi tygodniowo — wystarczająco regularnie, żeby zobaczyć realne efekty, z czasem na regenerację.</p>
         </div>
-        <div class="pricing__card anim-fade-in">
+        <div class="pricing__card anim-fade-in anim-delay-2">
           <h3 class="pricing__card-title">3× w tygodniu</h3>
           <div class="pricing__card-price">1560 <span>zł/msc</span></div>
           <p class="pricing__card-per">12 treningów × 130 zł</p>
           <p class="pricing__card-desc">Trzy razy w tygodniu — dla tych, którzy chcą trenować regularnie i intensywnie.</p>
-        </div>
-        <div class="pricing__card anim-fade-in">
-          <h3 class="pricing__card-title">Pojedynczy trening</h3>
-          <div class="pricing__card-price">200 <span>zł</span></div>
-          <p class="pricing__card-desc">Jednorazowa sesja, bez zobowiązań — jeśli chcesz po prostu spróbować.</p>
         </div>
       </div>
       <p class="pricing__note anim-fade-in">Każdy wariant obejmuje indywidualny plan treningowy i stały kontakt ze mną między sesjami.</p>
@@ -231,7 +310,7 @@
       <div class="contact__inner anim-fade-in">
         <span class="section-tag">Kontakt</span>
         <h2 class="section-title">Napisz do mnie</h2>
-        <p class="contact__text">Masz pytania dotyczące treningów lub chcesz rozpocząć współpracę? Napisz do mnie na Instagramie, Facebooku, zadzwoń lub skorzystaj z chatbota na stronie — odpowiem najszybciej jak to możliwe.</p>
+        <p class="contact__text">Masz pytania dotyczące treningów lub chcesz rozpocząć współpracę? Napisz do mnie na Instagramie, Facebooku lub zadzwoń — postaram się odpowiedzieć jak najszybciej.</p>
         <p class="contact__text"><strong>Dominik Maik</strong></p>
         <p class="contact__text">📍 Warszawskie Centrum Atletyki, ul.&nbsp;Roesler&nbsp;2, Warszawa</p>
         <div class="contact__buttons">
@@ -309,6 +388,15 @@
         document.body.classList.add('page-loaded');
       }, 600);
     });
+
+    // About photo fallback
+    const aboutPhoto = document.getElementById('aboutPhoto');
+    if (aboutPhoto) {
+      aboutPhoto.addEventListener('error', function() {
+        this.style.display = 'none';
+        document.getElementById('aboutImageCard').classList.add('no-photo');
+      });
+    }
 
     // Hamburger
     const hamburger = document.getElementById('navHamburger');
