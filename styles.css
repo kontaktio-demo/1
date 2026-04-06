@@ -20,7 +20,7 @@
   --nav-h:70px;
   --font:'Outfit',sans-serif;
 }
-html{scroll-behavior:smooth;font-size:16px}
+html{scroll-behavior:smooth;font-size:16px;scroll-padding-top:var(--nav-h)}
 body{
   font-family:var(--font);
   background:var(--bg);
@@ -53,9 +53,9 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 /* gym icon float */
 @keyframes gymFloat{
   0%{opacity:0;transform:translateY(20px) rotate(-8deg) scale(.85)}
-  12%{opacity:.055}
-  88%{opacity:.055}
-  100%{opacity:0;transform:translateY(-90px) rotate(8deg) scale(1.1)}
+  12%{opacity:.13}
+  88%{opacity:.13}
+  100%{opacity:0;transform:translateY(-100px) rotate(8deg) scale(1.1)}
 }
 /* transformations bg pulse */
 @keyframes tfBgPulse{
@@ -867,6 +867,30 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   transform-origin:center;
   will-change:transform,opacity;
   z-index:0;
+}
+.tf-pulse-ring{
+  position:absolute;
+  border-radius:50%;
+  border:1.5px solid rgba(16,185,129,.5);
+  pointer-events:none;
+  animation:tfPulseRing ease-out infinite;
+  z-index:0;
+}
+.tf-orb{
+  position:absolute;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(16,185,129,.18) 0%, rgba(6,182,212,.08) 50%, transparent 70%);
+  pointer-events:none;
+  animation:tfOrbDrift ease-in-out infinite alternate;
+  z-index:0;
+}
+@keyframes tfPulseRing{
+  0%{transform:scale(.2);opacity:.9}
+  100%{transform:scale(3.5);opacity:0}
+}
+@keyframes tfOrbDrift{
+  0%{transform:translate(0,0) scale(1);opacity:.5}
+  100%{transform:translate(3%,-4%) scale(1.12);opacity:.8}
 }
 
 /* ===== ACHIEVEMENTS ===== */
