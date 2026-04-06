@@ -730,6 +730,148 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   to{width:100%}
 }
 
+/* ===== ACHIEVEMENTS ===== */
+.achievements{
+  padding:100px 0;
+  background:var(--bg-card);
+  position:relative;
+}
+.achievements::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 60% 40%, rgba(16,185,129,.05) 0%, transparent 50%);
+  pointer-events:none;
+}
+.achievements__header{text-align:center;margin-bottom:56px;position:relative;z-index:1}
+.achievements__grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  position:relative;z-index:1;
+}
+.achievements__card{
+  background:rgba(10,14,23,.85);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);padding:36px 24px;
+  text-align:center;
+  transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s ease,box-shadow .4s ease;
+}
+.achievements__card:hover{
+  transform:translateY(-6px);border-color:var(--accent);
+  box-shadow:0 12px 40px rgba(16,185,129,.1);
+}
+.achievements__card-icon{
+  width:64px;height:64px;border-radius:16px;
+  background:rgba(16,185,129,.1);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;
+  transition:background .3s ease;
+}
+.achievements__card:hover .achievements__card-icon{background:rgba(16,185,129,.2)}
+.achievements__card-icon svg{width:28px;height:28px}
+.achievements__card h3{
+  font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:10px;
+}
+.achievements__card p{color:var(--text-muted);font-size:.9rem;line-height:1.7}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials{
+  padding:100px 0;
+  background:var(--bg);
+  position:relative;
+}
+.testimonials::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 30% 50%, rgba(16,185,129,.04) 0%, transparent 50%);
+  pointer-events:none;
+}
+.testimonials__header{text-align:center;margin-bottom:56px;position:relative;z-index:1}
+.testimonials__grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+  position:relative;z-index:1;
+}
+.testimonials__card{
+  background:var(--bg-card);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);padding:32px 28px;
+  transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s ease,box-shadow .4s ease;
+  display:flex;flex-direction:column;
+}
+.testimonials__card:hover{
+  transform:translateY(-4px);border-color:rgba(16,185,129,.25);
+  box-shadow:0 8px 32px rgba(16,185,129,.07);
+}
+.testimonials__stars{
+  color:#fbbf24;font-size:1.1rem;letter-spacing:2px;margin-bottom:16px;
+}
+.testimonials__text{
+  color:var(--text);font-size:1rem;line-height:1.8;
+  margin-bottom:24px;font-style:italic;flex:1;
+}
+.testimonials__author{
+  display:flex;align-items:center;gap:14px;
+  padding-top:20px;border-top:1px solid rgba(255,255,255,.06);
+}
+.testimonials__avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+  color:var(--bg);display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.82rem;flex-shrink:0;
+}
+.testimonials__name{font-size:.95rem;font-weight:600;color:var(--white)}
+.testimonials__role{font-size:.82rem;color:var(--text-muted)}
+
+/* ===== FAQ ===== */
+.faq{
+  padding:100px 0;
+  background:var(--bg-card);
+  position:relative;
+}
+.faq::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 70% 30%, rgba(16,185,129,.04) 0%, transparent 50%);
+  pointer-events:none;
+}
+.faq__header{text-align:center;margin-bottom:56px;position:relative;z-index:1}
+.faq__list{
+  max-width:760px;margin:0 auto;
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;gap:12px;
+}
+.faq__item{
+  background:rgba(10,14,23,.85);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);overflow:hidden;
+  transition:border-color .3s ease;
+}
+.faq__item.active{border-color:rgba(16,185,129,.3)}
+.faq__question{
+  width:100%;display:flex;align-items:center;
+  justify-content:space-between;
+  padding:22px 24px;background:none;border:none;cursor:pointer;
+  color:var(--white);font-family:var(--font);
+  font-size:1rem;font-weight:600;text-align:left;gap:16px;
+  transition:color .2s ease;
+}
+.faq__question:hover{color:var(--accent-light)}
+.faq__question-icon{
+  flex-shrink:0;width:26px;height:26px;border-radius:50%;
+  background:rgba(16,185,129,.1);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),background .3s ease;
+}
+.faq__item.active .faq__question-icon{
+  transform:rotate(45deg);background:rgba(16,185,129,.2);
+}
+.faq__question-icon svg{width:14px;height:14px}
+.faq__answer{
+  max-height:0;overflow:hidden;
+  transition:max-height .45s cubic-bezier(.22,1,.36,1);
+}
+.faq__item.active .faq__answer{max-height:600px}
+.faq__answer p{
+  padding:0 24px 22px;
+  color:var(--text-muted);font-size:.95rem;line-height:1.8;
+}
+.faq__answer strong{color:var(--accent-light);font-weight:600}
+
 /* ===== CONTACT ===== */
 .contact{
   padding:120px 0;text-align:center;
@@ -843,6 +985,8 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   .gallery__grid{grid-template-columns:repeat(4,1fr);gap:8px}
   .tf-carousel__arrow--prev{left:8px}
   .tf-carousel__arrow--next{right:8px}
+  .achievements__grid{grid-template-columns:repeat(2,1fr)}
+  .testimonials__grid{grid-template-columns:1fr}
   .footer__grid{grid-template-columns:1fr 1fr;gap:32px;text-align:center}
   .footer__desc{margin:0 auto}
   .footer__brand{justify-content:center}
@@ -875,6 +1019,13 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   .tf-carousel__arrow svg{width:14px;height:14px}
   .tf-carousel__arrow--prev{left:6px}
   .tf-carousel__arrow--next{right:6px}
+  .achievements{padding:60px 0}
+  .achievements__grid{grid-template-columns:1fr 1fr;gap:12px}
+  .achievements__card{padding:24px 16px}
+  .testimonials{padding:60px 0}
+  .faq{padding:60px 0}
+  .faq__question{font-size:.95rem;padding:18px 18px}
+  .faq__answer p{padding:0 18px 18px}
   .contact{padding:80px 0}
   .footer__grid{grid-template-columns:1fr;gap:32px}
 }
