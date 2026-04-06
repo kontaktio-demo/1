@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dominik Maik - Trener personalny. Treningi indywidualne dopasowane do Ciebie.">
+  <title>Dominik Maik - Trener Personalny | maiktrenuje.pl</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="pageLoader">
+    <div class="loader__pulse"></div>
+    <div class="loader__text">DM</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand">
+        <span class="nav__logo-circle">DM</span>
+        <span class="nav__name">Dominik Maik</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+        <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
+        <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
+        <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+        <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
+      </ul>
+      <a href="#kontakt" class="nav__cta" data-scroll-to="kontakt">Napisz do mnie</a>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+      <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
+      <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
+      <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+      <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
+      <li><a href="#kontakt" class="mobile-menu__cta" data-scroll-to="kontakt">Napisz do mnie</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content">
+      <div class="hero__tag anim-slide-up">Trener personalny</div>
+      <h1 class="hero__title anim-slide-up anim-delay-1">
+        Dominik<br><span class="hero__title-accent">Maik</span>
+      </h1>
+      <p class="hero__subtitle anim-slide-up anim-delay-2">
+        Profesjonalny trening personalny dopasowany do Twoich celów. Skuteczność poparta doświadczeniem i wiedzą.
+      </p>
+      <div class="hero__buttons anim-slide-up anim-delay-3">
+        <a href="#kontakt" class="btn btn--primary" data-scroll-to="kontakt">Napisz do mnie</a>
+        <a href="#o-mnie" class="btn btn--glass" data-scroll-to="o-mnie">Poznaj mnie bliżej</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- O MNIE -->
+  <section class="about" id="o-mnie">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrap anim-fade-in">
+          <div class="about__image-card">
+            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy">
+          </div>
+        </div>
+        <div class="about__text anim-fade-in">
+          <span class="section-tag">O mnie</span>
+          <h2 class="section-title">Dominik Maik</h2>
+          <p>Jestem doświadczonym trenerem personalnym — od ponad <strong>10 lat</strong> pomagam ludziom osiągać ich cele treningowe. Trening to nie tylko moja praca, ale przede wszystkim pasja i styl życia, dzięki czemu podchodzę do każdego podopiecznego z pełnym zaangażowaniem.</p>
+          <p>Posiadam <strong>certyfikat trenera medycznego</strong>, co pozwala mi bezpiecznie pracować z szerokim spektrum przypadków — od osób rozpoczynających przygodę z siłownią, przez ludzi po kontuzjach i z problemami zdrowotnymi, aż po tych, którzy po prostu potrzebują fachowego wsparcia na starcie.</p>
+          <p>Specjalizuję się w <strong>treningu siłowym, ogólnorozwojowym i motorycznym pod sporty walki</strong>. Wśród moich podopiecznych znajdziesz zarówno osoby początkujące, jak i zaawansowanych sportowców, którzy chcą w pełni wykorzystać swój potencjał.</p>
+          <p>Sam startuję w <strong>zawodach men's physique</strong>, więc doskonale rozumiem proces zaawansowanej redukcji i budowania formy. To praktyczna wiedza zdobyta na własnym doświadczeniu — wiem, co przynosi realne rezultaty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section class="offer" id="oferta">
+    <div class="container">
+      <div class="offer__header anim-fade-in">
+        <span class="section-tag">Co oferuję</span>
+        <h2 class="section-title">Oferta</h2>
+        <p class="offer__intro">Stawiam na <strong>współprace długoterminowe</strong> — na start podpisujemy umowę na <strong>minimum 3 miesiące</strong>. To czas, w którym mogę realnie wpłynąć na Twoje nawyki i podejście do treningów. Każdy plan tworzę indywidualnie, bo każdy człowiek jest inny.</p>
+      </div>
+      <div class="offer__grid">
+        <div class="offer__card anim-fade-in">
+          <div class="offer__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Treningi personalne</h3>
+          <p>Wspólne treningi pod okiem profesjonalisty — pilnuję techniki, dobieram ćwiczenia i motywuję Cię do postępów. Każdy trening jest dopasowany do Twoich celów: budowy masy mięśniowej, redukcji tkanki tłuszczowej, poprawy siły czy przygotowania motorycznego pod sporty walki.</p>
+        </div>
+        <div class="offer__card anim-fade-in">
+          <div class="offer__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Plany treningowe</h3>
+          <p>Otrzymujesz szczegółowo rozpisany plan treningowy — ćwiczenia, serie, powtórzenia i progresję. Jako certyfikowany trener medyczny dobieram ćwiczenia bezpiecznie, uwzględniając Twoje indywidualne potrzeby i ewentualne ograniczenia zdrowotne.</p>
+        </div>
+        <div class="offer__card anim-fade-in">
+          <div class="offer__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          </div>
+          <h3>Monitoring postępów</h3>
+          <p>Na bieżąco śledzę Twoje wyniki i reaguję, gdy jest taka potrzeba. Jeśli coś wymaga korekty — dostosowuję plan. Przy współpracy na 3 miesiące mam wystarczająco czasu, żeby realnie zmienić Twoje nawyki i pomóc Ci osiągnąć trwałe rezultaty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENNIK -->
+  <section class="pricing" id="cennik">
+    <div class="container">
+      <div class="pricing__header anim-fade-in">
+        <span class="section-tag">Cennik</span>
+        <h2 class="section-title">Ile to kosztuje</h2>
+        <p class="pricing__subtitle">Poniżej znajdziesz aktualne ceny moich usług. Im częściej trenujemy, tym mniej płacisz za pojedynczą sesję. Na start podpisujemy umowę na minimum 3 miesiące.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing__card anim-fade-in">
+          <h3 class="pricing__card-title">Trening diagnostyczny</h3>
+          <div class="pricing__card-price">150 <span>zł</span></div>
+          <p class="pricing__card-desc">Pierwsze spotkanie — poznajemy się, sprawdzam Twój zakres ruchu i omawiam cele. Na tej podstawie przygotowuję plan działania.</p>
+        </div>
+        <div class="pricing__card anim-fade-in">
+          <h3 class="pricing__card-title">1× w tygodniu</h3>
+          <div class="pricing__card-price">680 <span>zł/msc</span></div>
+          <p class="pricing__card-per">4 treningi × 170 zł</p>
+          <p class="pricing__card-desc">Jeden trening tygodniowo — dobry punkt wyjścia, jeśli dopiero zaczynasz lub trenujesz też samodzielnie.</p>
+        </div>
+        <div class="pricing__card anim-fade-in">
+          <h3 class="pricing__card-title">2× w tygodniu</h3>
+          <div class="pricing__card-price">1200 <span>zł/msc</span></div>
+          <p class="pricing__card-per">8 treningów × 150 zł</p>
+          <p class="pricing__card-desc">Dwa treningi tygodniowo — wystarczająco regularnie, żeby zobaczyć realne efekty, z czasem na regenerację.</p>
+        </div>
+        <div class="pricing__card anim-fade-in">
+          <h3 class="pricing__card-title">3× w tygodniu</h3>
+          <div class="pricing__card-price">1560 <span>zł/msc</span></div>
+          <p class="pricing__card-per">12 treningów × 130 zł</p>
+          <p class="pricing__card-desc">Trzy razy w tygodniu — dla tych, którzy chcą trenować regularnie i intensywnie.</p>
+        </div>
+        <div class="pricing__card anim-fade-in">
+          <h3 class="pricing__card-title">Pojedynczy trening</h3>
+          <div class="pricing__card-price">200 <span>zł</span></div>
+          <p class="pricing__card-desc">Jednorazowa sesja, bez zobowiązań — jeśli chcesz po prostu spróbować.</p>
+        </div>
+      </div>
+      <p class="pricing__note anim-fade-in">Każdy wariant obejmuje indywidualny plan treningowy i stały kontakt ze mną między sesjami.</p>
+    </div>
+  </section>
+
+  <!-- TRANSFORMACJE -->
+  <section class="transformations" id="transformacje">
+    <div class="container">
+      <div class="transformations__header anim-fade-in">
+        <span class="section-tag">Przemiany moich podopiecznych</span>
+        <h2 class="section-title">Transformacje</h2>
+      </div>
+      <div class="tf-carousel anim-fade-in" id="tfCarousel">
+        <div class="tf-carousel__viewport" id="tfViewport">
+          <div class="tf-carousel__track" id="tfTrack">
+            <div class="tf-carousel__slide" data-tf-slide="0">
+              <img src="photos/IMG_2205.png" alt="Transformacja podopiecznego 1" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="1">
+              <img src="photos/IMG_2206.png" alt="Transformacja podopiecznego 2" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="2">
+              <img src="photos/IMG_2207.png" alt="Transformacja podopiecznego 3" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="3">
+              <img src="photos/IMG_2208.png" alt="Transformacja podopiecznego 4" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="4">
+              <img src="photos/IMG_2209.png" alt="Transformacja podopiecznego 5" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="5">
+              <img src="photos/IMG_2211.png" alt="Transformacja podopiecznego 6" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="6">
+              <img src="photos/IMG_2212.png" alt="Transformacja podopiecznego 7" loading="lazy">
+            </div>
+            <div class="tf-carousel__slide" data-tf-slide="7">
+              <img src="photos/IMG_2213.png" alt="Transformacja podopiecznego 8" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <button class="tf-carousel__arrow tf-carousel__arrow--prev" id="tfPrev" aria-label="Poprzednie zdjęcie">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="tf-carousel__arrow tf-carousel__arrow--next" id="tfNext" aria-label="Następne zdjęcie">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="tf-carousel__controls">
+          <div class="tf-carousel__counter" id="tfCounter"><span id="tfCurrent">1</span> / <span id="tfTotal">8</span></div>
+          <div class="tf-carousel__dots" id="tfDots"></div>
+          <div class="tf-carousel__progress">
+            <div class="tf-carousel__progress-bar" id="tfProgressBar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT / CTA -->
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <div class="contact__inner anim-fade-in">
+        <span class="section-tag">Kontakt</span>
+        <h2 class="section-title">Napisz do mnie</h2>
+        <p class="contact__text">Masz pytania dotyczące treningów lub chcesz rozpocząć współpracę? Napisz do mnie na Instagramie, Facebooku, zadzwoń lub skorzystaj z chatbota na stronie — odpowiem najszybciej jak to możliwe.</p>
+        <p class="contact__text"><strong>Dominik Maik</strong></p>
+        <p class="contact__text">📍 Warszawskie Centrum Atletyki, ul.&nbsp;Roesler&nbsp;2, Warszawa</p>
+        <div class="contact__buttons">
+          <a href="https://www.instagram.com/maik.dominik/" target="_blank" rel="noopener" class="btn btn--primary">Instagram</a>
+          <a href="https://www.facebook.com/dominik.maik.5" target="_blank" rel="noopener" class="btn btn--outline">Facebook</a>
+          <a href="tel:+48533200471" class="btn btn--outline">📞 533 200 471</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__brand">
+            <span class="nav__logo-circle nav__logo-circle--sm">DM</span>
+            <span class="footer__name">Dominik Maik</span>
+          </div>
+          <p class="footer__desc">Trener personalny z ponad 10-letnim doświadczeniem. Certyfikowany trener medyczny. Zawodnik men's physique.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Nawigacja</h4>
+          <ul class="footer__links">
+            <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+            <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
+            <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
+            <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+            <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Informacje prawne</h4>
+          <ul class="footer__links">
+            <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+            <li><a href="regulamin.html">Regulamin serwisu</a></li>
+            <li><a href="#" id="footerCookieSettings">Ustawienia cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Kontakt</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.instagram.com/maik.dominik/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/dominik.maik.5" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="tel:+48533200471">📞 533 200 471</a></li>
+          </ul>
+          <p class="footer__address">📍 Warszawskie Centrum Atletyki<br>ul.&nbsp;Roesler&nbsp;2, Warszawa</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear">2026</span> maiktrenuje.pl — Wszelkie prawa zastrzeżone.</p>
+        <p class="footer__credits">Zrobione przez <a href="https://kontaktio.pl" target="_blank" rel="noopener">Kontaktio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <script
+    src="./kontaktio.js"
+    data-kontaktio
+    data-client="maik"
+    data-backend="https://chatbot-backend-x2cy.onrender.com"
+  ></script>
+
+  <script>
+  (function() {
+    'use strict';
+
+    // Loader
+    const loader = document.getElementById('pageLoader');
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        loader.classList.add('loaded');
+        document.body.classList.add('page-loaded');
+      }, 600);
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('navHamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    // Nav scroll
+    const nav = document.getElementById('mainNav');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        nav.classList.remove('nav--hidden', 'nav--scrolled');
+      } else if (currentScroll > lastScroll && currentScroll > 80) {
+        nav.classList.add('nav--hidden');
+      } else if (currentScroll < lastScroll) {
+        nav.classList.remove('nav--hidden');
+        nav.classList.add('nav--scrolled');
+      }
+      lastScroll = currentScroll;
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('[data-scroll-to]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = el.getAttribute('data-scroll-to');
+        const target = document.getElementById(targetId);
+        if (target) {
+          const navHeight = nav.offsetHeight;
+          const pos = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+          window.scrollTo({ top: pos, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Intersection observer for animations
+    const animEls = document.querySelectorAll('.anim-fade-in, .anim-slide-up');
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    animEls.forEach(el => animObserver.observe(el));
+
+    // Particles
+    const particlesContainer = document.getElementById('particles');
+    if (particlesContainer) {
+      for (let i = 0; i < 30; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'particle';
+        dot.style.left = Math.random() * 100 + '%';
+        dot.style.top = Math.random() * 100 + '%';
+        dot.style.animationDelay = Math.random() * 6 + 's';
+        dot.style.animationDuration = (4 + Math.random() * 6) + 's';
+        dot.style.width = dot.style.height = (2 + Math.random() * 4) + 'px';
+        particlesContainer.appendChild(dot);
+      }
+    }
+
+    // Year
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Gallery slideshow
+    const slides = document.querySelectorAll('.gallery__slide');
+    const thumbs = document.querySelectorAll('.gallery__thumb');
+    const dotsWrap = document.getElementById('galleryDots');
+    const prevBtn = document.getElementById('galleryPrev');
+    const nextBtn = document.getElementById('galleryNext');
+
+    if (slides.length && dotsWrap) {
+      let currentSlide = 0;
+      let autoTimer = null;
+
+      // Create dots
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'gallery__dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Zdjęcie ' + (i + 1));
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsWrap.appendChild(dot);
+      });
+
+      // Set initial active thumb
+      if (thumbs.length) thumbs[0].classList.add('active');
+
+      function goToSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        const dots = dotsWrap.querySelectorAll('.gallery__dot');
+        if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+        if (thumbs[currentSlide]) thumbs[currentSlide].classList.remove('active');
+
+        currentSlide = (index + slides.length) % slides.length;
+
+        slides[currentSlide].classList.add('active');
+        if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+        if (thumbs[currentSlide]) thumbs[currentSlide].classList.add('active');
+
+        resetAutoplay();
+      }
+
+      function nextSlide() { goToSlide(currentSlide + 1); }
+      function prevSlide() { goToSlide(currentSlide - 1); }
+
+      function resetAutoplay() {
+        if (autoTimer) clearInterval(autoTimer);
+        autoTimer = setInterval(nextSlide, 4500);
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+      if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+      thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+          const idx = parseInt(thumb.getAttribute('data-slide'), 10);
+          if (!isNaN(idx)) goToSlide(idx);
+        });
+      });
+
+      // Keyboard navigation
+      const slideshow = document.getElementById('gallerySlideshow');
+      if (slideshow) {
+        slideshow.setAttribute('tabindex', '0');
+        slideshow.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') prevSlide();
+          else if (e.key === 'ArrowRight') nextSlide();
+        });
+      }
+
+      // Touch swipe
+      let touchStartX = 0;
+      const slidesContainer = document.getElementById('gallerySlides');
+      if (slidesContainer) {
+        slidesContainer.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        slidesContainer.addEventListener('touchend', (e) => {
+          const diff = e.changedTouches[0].screenX - touchStartX;
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) prevSlide();
+            else nextSlide();
+          }
+        }, { passive: true });
+      }
+
+      resetAutoplay();
+    }
+
+    // Transformations carousel
+    const tfTrack = document.getElementById('tfTrack');
+    const tfSlides = tfTrack ? tfTrack.querySelectorAll('.tf-carousel__slide') : [];
+    const tfDotsWrap = document.getElementById('tfDots');
+    const tfPrevBtn = document.getElementById('tfPrev');
+    const tfNextBtn = document.getElementById('tfNext');
+    const tfCurrentEl = document.getElementById('tfCurrent');
+    const tfTotalEl = document.getElementById('tfTotal');
+    const tfProgressBar = document.getElementById('tfProgressBar');
+
+    if (tfSlides.length && tfTrack) {
+      let tfCurrent = 0;
+      let tfAutoTimer = null;
+      const tfAutoDelay = 5000;
+
+      if (tfTotalEl) tfTotalEl.textContent = tfSlides.length;
+
+      // Create dots
+      tfSlides.forEach(function(_, i) {
+        var dot = document.createElement('button');
+        dot.className = 'tf-carousel__dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Transformacja ' + (i + 1));
+        dot.addEventListener('click', function() { tfGoTo(i); });
+        tfDotsWrap.appendChild(dot);
+      });
+
+      function tfGoTo(index) {
+        tfCurrent = ((index % tfSlides.length) + tfSlides.length) % tfSlides.length;
+        tfTrack.style.transform = 'translateX(-' + (tfCurrent * 100) + '%)';
+
+        // Update dots
+        var dots = tfDotsWrap.querySelectorAll('.tf-carousel__dot');
+        dots.forEach(function(d, i) {
+          d.classList.toggle('active', i === tfCurrent);
+        });
+
+        // Update counter
+        if (tfCurrentEl) tfCurrentEl.textContent = tfCurrent + 1;
+
+        // Force reflow to restart CSS animation
+          if (tfProgressBar) {
+          tfProgressBar.style.animation = 'none';
+          void tfProgressBar.offsetHeight;
+          tfProgressBar.style.animation = 'tfProgress ' + (tfAutoDelay / 1000) + 's linear forwards';
+        }
+
+        tfResetAuto();
+      }
+
+      function tfNext() { tfGoTo(tfCurrent + 1); }
+      function tfPrev() { tfGoTo(tfCurrent - 1); }
+
+      function tfResetAuto() {
+        if (tfAutoTimer) clearInterval(tfAutoTimer);
+        tfAutoTimer = setInterval(tfNext, tfAutoDelay);
+      }
+
+      if (tfPrevBtn) tfPrevBtn.addEventListener('click', tfPrev);
+      if (tfNextBtn) tfNextBtn.addEventListener('click', tfNext);
+
+      // Keyboard navigation
+      var tfCarousel = document.getElementById('tfCarousel');
+      if (tfCarousel) {
+        tfCarousel.setAttribute('tabindex', '0');
+        tfCarousel.addEventListener('keydown', function(e) {
+          if (e.key === 'ArrowLeft') tfPrev();
+          else if (e.key === 'ArrowRight') tfNext();
+        });
+      }
+
+      // Touch swipe
+      var tfTouchStartX = 0;
+      var tfViewport = document.getElementById('tfViewport');
+      if (tfViewport) {
+        tfViewport.addEventListener('touchstart', function(e) {
+          tfTouchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        tfViewport.addEventListener('touchend', function(e) {
+          var diff = e.changedTouches[0].screenX - tfTouchStartX;
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) tfPrev();
+            else tfNext();
+          }
+        }, { passive: true });
+      }
+
+      // Start autoplay and progress bar
+      tfResetAuto();
+      if (tfProgressBar) {
+        tfProgressBar.style.animation = 'tfProgress ' + (tfAutoDelay / 1000) + 's linear forwards';
+      }
+    }
+
+    // Footer cookie settings link
+    var cookieSettingsLink = document.getElementById('footerCookieSettings');
+    if (cookieSettingsLink) {
+      cookieSettingsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (typeof openCookieSettings === 'function') openCookieSettings();
+      });
+    }
+
+  })();
+  </script>
+
+  <!-- Cookie consent -->
+  <script src="cookie-consent.js"></script>
+</body>
+</html>
