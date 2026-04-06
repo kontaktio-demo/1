@@ -278,14 +278,15 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   text-wrap:pretty;
 }
 .hero__motto{
-  font-size:clamp(1.5rem,4.5vw,3rem);font-style:italic;font-weight:800;
-  color:var(--white);margin:0 auto 28px;letter-spacing:-.01em;line-height:1.2;
+  font-size:clamp(2.6rem,8vw,6.5rem);font-style:italic;font-weight:900;
+  color:var(--white);margin:0 auto 32px;letter-spacing:-.03em;line-height:1.1;
   background:linear-gradient(135deg,var(--accent),#06b6d4);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
   background-clip:text;
   text-shadow:none;
-  padding:0.05em 0.15em;
+  padding:0.05em 0.1em;
   width:100%;box-sizing:border-box;
+  filter:drop-shadow(0 0 32px rgba(16,185,129,.35));
 }
 .hero__tag-online{
   color:var(--accent-light);font-weight:700;
