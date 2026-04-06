@@ -410,7 +410,7 @@
       </div>
       <div class="faq__list anim-fade-in">
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Od czego zaczynamy współpracę?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -419,7 +419,7 @@
           </div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Czy trening diagnostyczny jest obowiązkowy?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -428,7 +428,7 @@
           </div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Gdzie odbywają się treningi?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -437,7 +437,7 @@
           </div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Czy mogę trenować z kontuzją lub problemami zdrowotnymi?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -446,7 +446,7 @@
           </div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Co zawiera indywidualny plan treningowy?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -455,7 +455,7 @@
           </div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Jak szybko zobaczę efekty?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -464,7 +464,7 @@
           </div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
+          <button class="faq__question" aria-expanded="false">
             <span>Czy mam kontakt z trenerem między treningami?</span>
             <span class="faq__question-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
@@ -845,8 +845,12 @@
         var isActive = item.classList.contains('active');
         document.querySelectorAll('.faq__item.active').forEach(function(i) {
           i.classList.remove('active');
+          i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
         });
-        if (!isActive) item.classList.add('active');
+        if (!isActive) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 
