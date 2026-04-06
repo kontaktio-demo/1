@@ -275,6 +275,10 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   max-width:520px;margin:0 auto 36px;line-height:1.7;
   text-wrap:pretty;
 }
+.hero__motto{
+  font-size:clamp(.95rem,2vw,1.15rem);font-style:italic;color:var(--accent-light);
+  opacity:.8;margin:-16px auto 28px;letter-spacing:.03em;
+}
 .hero__buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
 .btn{
