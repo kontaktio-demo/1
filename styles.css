@@ -1172,6 +1172,10 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   .footer__grid{grid-template-columns:1fr;gap:32px}
 }
 
+@media(min-width:641px){
+  .hero{align-items:flex-start}
+}
+
 @media(max-width:480px){
   .container{padding:0 16px}
   .hero{min-height:100svh;padding-bottom:40px}
