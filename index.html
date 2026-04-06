@@ -648,6 +648,7 @@
     }
 
     // Floating gym icons in transformations section
+    // Icons drift upward over 18–40s, nearly invisible (opacity ~0.055) for a subtle aesthetic
     (function() {
       var tfSection = document.getElementById('transformacje');
       if (!tfSection) return;
@@ -662,6 +663,7 @@
         el.style.left = (5 + Math.random() * 90) + '%';
         el.style.bottom = '-80px';
         el.style.width = (36 + Math.random() * 55) + 'px';
+        // Duration range: 18–40 seconds for a slow, peaceful drift
         el.style.animationDuration = (18 + Math.random() * 22) + 's';
         el.style.animationDelay = (Math.random() * 14) + 's';
         tfSection.appendChild(el);
@@ -683,10 +685,11 @@
           var targetNum = parseInt(numMatch[1], 10);
           var suffix = fullHTML.slice(numMatch[1].length);
           var start = null;
-          var duration = 1400;
+          var durationMs = 1400; // count-up animation duration in ms
           function step(ts) {
             if (!start) start = ts;
-            var p = Math.min((ts - start) / duration, 1);
+            var p = Math.min((ts - start) / durationMs, 1);
+            // Ease-out cubic: decelerates toward the end
             var eased = 1 - Math.pow(1 - p, 3);
             el.innerHTML = Math.floor(eased * targetNum) + suffix;
             if (p < 1) requestAnimationFrame(step);
