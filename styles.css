@@ -276,8 +276,15 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   text-wrap:pretty;
 }
 .hero__motto{
-  font-size:clamp(.95rem,2vw,1.15rem);font-style:italic;color:var(--accent-light);
-  opacity:.8;margin:-16px auto 28px;letter-spacing:.03em;
+  font-size:clamp(2rem,5vw,3.5rem);font-style:italic;font-weight:800;
+  color:var(--white);margin:0 auto 28px;letter-spacing:-.01em;line-height:1.15;
+  background:linear-gradient(135deg,var(--accent),#06b6d4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  text-shadow:none;
+}
+.hero__tag-online{
+  color:var(--accent-light);font-weight:700;
 }
 .hero__buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
