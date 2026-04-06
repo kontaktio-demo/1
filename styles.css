@@ -258,6 +258,7 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   pointer-events:none;
 }
 .about__grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center;position:relative;z-index:1}
+.about__image-wrap{max-width:400px}
 .about__image-card{
   border-radius:var(--radius);overflow:hidden;
   border:2px solid rgba(16,185,129,.2);
