@@ -1,8 +1,3 @@
-/* ============================================
-   DOMINIK MAIK - maiktrenuje.pl
-   Dark theme + emerald/teal accents
-   ============================================ */
-
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#0a0e17;
@@ -31,7 +26,6 @@ body{
 }
 body.menu-open{overflow:hidden}
 
-/* ===== GLOBAL ANIMATIONS ===== */
 body.page-loaded .anim-slide-up,
 body.page-loaded .anim-fade-in{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
 body.page-loaded .anim-slide-up.visible,
@@ -40,34 +34,32 @@ body.page-loaded .anim-delay-1{transition-delay:.15s}
 body.page-loaded .anim-delay-2{transition-delay:.3s}
 body.page-loaded .anim-delay-3{transition-delay:.45s}
 
-/* shimmer sweep */
 @keyframes shimmerSweep{
   0%,55%{transform:translateX(-130%) skewX(-15deg)}
   75%,100%{transform:translateX(130%) skewX(-15deg)}
 }
-/* btn primary shimmer */
+
 @keyframes btnShimmer{
   0%,60%{transform:translateX(-120%)}
   80%,100%{transform:translateX(120%)}
 }
 
-/* carousel glow */
 @keyframes carouselGlow{
   0%{box-shadow:0 16px 50px rgba(0,0,0,.5),0 0 30px rgba(16,185,129,.08),0 0 0 1px rgba(16,185,129,.14)}
   100%{box-shadow:0 16px 50px rgba(0,0,0,.5),0 0 80px rgba(16,185,129,.22),0 0 0 1.5px rgba(16,185,129,.32)}
 }
-/* aurora shift on hero */
+
 @keyframes auroraShift{
   0%{opacity:.9;transform:translate(0,0) scale(1)}
   33%{opacity:1;transform:translate(-2%,1%) scale(1.04)}
   66%{opacity:.85;transform:translate(2%,-1%) scale(.97)}
   100%{opacity:.9;transform:translate(0,0) scale(1)}
 }
-/* count-up flash */
+
 @keyframes numFlash{
   0%,100%{opacity:1}50%{opacity:.5}
 }
-/* section tag underline grow */
+
 @keyframes tagLine{
   from{transform:scaleX(0)}to{transform:scaleX(1)}
 }
@@ -104,7 +96,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   text-wrap:balance;
 }
 
-/* ===== LOADER ===== */
 .loader{
   position:fixed;inset:0;z-index:99999;
   background:var(--bg);
@@ -123,7 +114,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   font-size:1.6rem;font-weight:800;color:var(--white);letter-spacing:4px;
 }
 
-/* ===== NAV ===== */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   height:var(--nav-h);
@@ -214,7 +204,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .nav__hamburger.active span:nth-child(2){opacity:0}
 .nav__hamburger.active span:nth-child(3){bottom:50%;transform:translateY(50%) rotate(-45deg)}
 
-/* ===== MOBILE MENU ===== */
 .mobile-menu{
   position:fixed;inset:0;z-index:999;
   background:rgba(10,14,23,.97);backdrop-filter:blur(20px);
@@ -233,7 +222,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   background:var(--accent)!important;color:var(--bg)!important;font-size:1rem!important;
 }
 
-/* ===== HERO ===== */
 .hero{
   position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
   overflow:hidden;text-align:center;padding:var(--nav-h) 24px 60px;
@@ -289,7 +277,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 }
 .hero__buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-/* Buttons */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;
   padding:14px 32px;border-radius:999px;font-weight:600;font-size:.95rem;
@@ -324,7 +311,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 }
 .btn--outline:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
 
-/* Scroll indicator */
 .hero__scroll-indicator{
   position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
 }
@@ -338,7 +324,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   100%{opacity:.3;transform:scaleY(.4) translateY(10px)}
 }
 
-/* ===== ABOUT ===== */
 .about{
   padding:120px 0;
   position:relative;
@@ -374,7 +359,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 }
 .about__text strong{color:var(--accent-light);font-weight:600}
 
-/* About badges */
 .about__badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .about__badge{
   display:inline-flex;align-items:center;gap:6px;
@@ -386,7 +370,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .about__badge:hover{background:rgba(16,185,129,.15);border-color:var(--accent)}
 .about__badge svg{flex-shrink:0;color:var(--accent)}
 
-/* About photo placeholder */
 .about__image-card.no-photo{
   display:flex;align-items:center;justify-content:center;
   min-height:380px;
@@ -402,7 +385,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   letter-spacing:-2px;
 }
 
-/* ===== STATS ===== */
 .stats{
   padding:60px 0;
   background:var(--bg-card);
@@ -450,7 +432,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   text-wrap:balance;
 }
 
-/* ===== PROCESS / JAK TO DZIAŁA ===== */
 .process{
   padding:100px 0;
   background:var(--bg-card);
@@ -504,7 +485,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   min-width:24px;
 }
 
-/* ===== GALLERY ===== */
 .gallery{
   padding:100px 0;
   background:
@@ -572,7 +552,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .gallery__thumb:hover{transform:translateY(-2px);opacity:.9;border-color:rgba(16,185,129,.4)}
 .gallery__thumb img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}
 
-/* ===== OFFER ===== */
 .offer{
   padding:100px 0;
   position:relative;
@@ -619,7 +598,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .offer__card h3{font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:12px}
 .offer__card p{color:var(--text-muted);font-size:.95rem;line-height:1.7;text-wrap:pretty}
 
-/* ===== PRICING ===== */
 .pricing{
   padding:100px 0;
   position:relative;
@@ -641,10 +619,10 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   display:grid;grid-template-columns:repeat(6,1fr);gap:20px;
   position:relative;z-index:1;
 }
-/* Top row: 2 single-session cards spanning 3 cols each */
+
 .pricing__card:nth-child(1),
 .pricing__card:nth-child(2){grid-column:span 3}
-/* Bottom row: 3 package cards spanning 2 cols each */
+
 .pricing__card:nth-child(3),
 .pricing__card:nth-child(4),
 .pricing__card:nth-child(5){grid-column:span 2}
@@ -706,21 +684,20 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   border:1px solid rgba(16,185,129,.12);
 }
 
-/* ===== TRANSFORMATIONS CAROUSEL ===== */
 .transformations{
   padding:70px 0;
   position:relative;
   overflow:hidden;
   background:var(--bg-section-alt);
 }
-/* Ambient glow overlays */
+
 .transformations::before{
   content:'';position:absolute;inset:0;
   background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=60&auto=format') center/cover no-repeat;
   opacity:.05;
   pointer-events:none;
 }
-/* Iron plate / hex-grid dot pattern */
+
 .transformations::after{
   content:'';position:absolute;inset:0;
   background-image:
@@ -761,7 +738,7 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   background:
     linear-gradient(160deg,#0d1520 0%,#111827 100%);
 }
-/* Subtle barbell placeholder shown before image loads */
+
 .tf-carousel__slide::before{
   content:'';
   position:absolute;inset:0;
@@ -780,7 +757,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   display:block;
 }
 
-/* Arrows */
 .tf-carousel__arrow{
   position:absolute;
   top:50%;
@@ -805,7 +781,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .tf-carousel__arrow--prev{left:-20px}
 .tf-carousel__arrow--next{right:-20px}
 
-/* Controls */
 .tf-carousel__controls{
   display:flex;
   flex-direction:column;
@@ -848,7 +823,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   transform:scale(1.15);
 }
 
-/* Progress bar */
 .tf-carousel__progress{
   width:100%;
   max-width:200px;
@@ -869,7 +843,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   to{width:100%}
 }
 
-/* ===== ACHIEVEMENTS ===== */
 .achievements{
   padding:100px 0;
   background:var(--bg-card);
@@ -923,7 +896,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 }
 .achievements__card p{color:var(--text-muted);font-size:.9rem;line-height:1.75;text-wrap:pretty}
 
-/* ===== TESTIMONIALS ===== */
 .testimonials{
   padding:100px 0;
   background:var(--bg);
@@ -971,7 +943,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .testimonials__name{font-size:.95rem;font-weight:600;color:var(--white)}
 .testimonials__role{font-size:.82rem;color:var(--text-muted)}
 
-/* ===== FAQ ===== */
 .faq{
   padding:100px 0;
   background:var(--bg-card);
@@ -1026,7 +997,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 }
 .faq__answer strong{color:var(--accent-light);font-weight:600}
 
-/* ===== CONTACT ===== */
 .contact{
   padding:120px 0;text-align:center;
   position:relative;
@@ -1047,7 +1017,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .contact__details strong{color:var(--white);font-weight:600}
 .contact__buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-/* ===== FOOTER ===== */
 .footer{
   padding:60px 0 0;
   border-top:1px solid rgba(255,255,255,.06);
@@ -1092,7 +1061,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 }
 .footer__credits a:hover{color:var(--accent-light)}
 
-/* ===== LEGAL PAGES ===== */
 .legal__updated{
   color:var(--text-muted);font-size:.9rem;margin-bottom:40px;
 }
@@ -1121,7 +1089,6 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
 .legal__content a:hover{color:var(--accent-light)}
 .legal__content strong{color:var(--accent-light);font-weight:600}
 
-/* ===== RESPONSIVE ===== */
 @media(max-width:1200px){
   .pricing__grid{grid-template-columns:repeat(6,1fr);gap:16px}
   .footer__grid{grid-template-columns:1.2fr 1fr 1fr 1fr;gap:28px}
@@ -1187,4 +1154,16 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   .faq__answer p{padding:0 18px 18px}
   .contact{padding:80px 0}
   .footer__grid{grid-template-columns:1fr;gap:32px}
+}
+
+@media(max-width:480px){
+  .container{padding:0 16px}
+  .hero{min-height:100svh;padding-bottom:40px}
+  .hero__title{font-size:clamp(2.4rem,9vw,3.5rem)}
+  .about__image-wrap{max-width:100%}
+  .achievements__grid{grid-template-columns:1fr}
+  .achievements__card{padding:20px 14px}
+  .offer__intro{text-align:center}
+  .pricing__card{padding:24px 18px}
+  .stats__label{font-size:.78rem;letter-spacing:.1px}
 }

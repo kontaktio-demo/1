@@ -160,7 +160,6 @@
       closeBanner();
     });
 
-    // Load existing preferences into toggles
     var existing = getConsent();
     if (existing) {
       if (analyticsInput) analyticsInput.checked = !!existing.analytics;
@@ -173,12 +172,10 @@
   function showBanner() {
     var overlay = document.getElementById('cookieConsent') || createBanner();
     overlay.style.display = 'flex';
-    // Force reflow for animation
     void overlay.offsetHeight;
     overlay.classList.add('cc-visible');
   }
 
-  // Global function to open cookie settings
   window.openCookieSettings = function () {
     showBanner();
     var details = document.getElementById('ccDetails');
@@ -189,11 +186,9 @@
     }
   };
 
-  // Init
   injectStyles();
   var consent = getConsent();
   if (!consent) {
-    // Show banner after a short delay for better UX
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', function () {
         setTimeout(showBanner, 800);
