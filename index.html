@@ -682,8 +682,7 @@
         ring.style.top = p.top;
         ring.style.width = p.size + 'px';
         ring.style.height = p.size + 'px';
-        ring.style.marginLeft = (-p.size / 2) + 'px';
-        ring.style.marginTop = (-p.size / 2) + 'px';
+        ring.style.transform = 'translate(-50%,-50%)';
         ring.style.animationDuration = p.dur + 's';
         ring.style.animationDelay = p.delay + 's';
         tfSection.appendChild(ring);

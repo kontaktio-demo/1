@@ -885,8 +885,8 @@ body.page-loaded .anim-delay-3{transition-delay:.45s}
   z-index:0;
 }
 @keyframes tfPulseRing{
-  0%{transform:scale(.2);opacity:.9}
-  100%{transform:scale(3.5);opacity:0}
+  0%{transform:translate(-50%,-50%) scale(.2);opacity:.9}
+  100%{transform:translate(-50%,-50%) scale(3.5);opacity:0}
 }
 @keyframes tfOrbDrift{
   0%{transform:translate(0,0) scale(1);opacity:.5}
