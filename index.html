@@ -725,6 +725,14 @@
   </section>
 
   
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Zamknij">&times;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+  </div>
+
+  
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -1083,6 +1091,34 @@
         }
       });
     });
+    // Lightbox for photo gallery
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var lightboxClose = document.getElementById('lightboxClose');
+    if (lightbox && lightboxImg) {
+      document.querySelectorAll('.photo-gallery__item').forEach(function(item) {
+        item.addEventListener('click', function() {
+          var img = item.querySelector('img');
+          if (img) {
+            lightboxImg.src = img.currentSrc || img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+      });
+    }
   })();
   </script>
 
