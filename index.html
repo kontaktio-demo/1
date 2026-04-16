@@ -31,6 +31,7 @@
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+        <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
         <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
         <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
         <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
@@ -50,6 +51,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul class="mobile-menu__links">
       <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+      <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
       <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
       <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
       <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
@@ -115,7 +117,11 @@
       <div class="about__grid">
         <div class="about__image-wrap anim-fade-in">
           <div class="about__image-card" id="aboutImageCard">
-            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" id="aboutPhoto">
+            <picture>
+              <source srcset="photos/trainer-posed.avif" type="image/avif">
+              <source srcset="photos/trainer-posed.webp" type="image/webp">
+              <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" id="aboutPhoto">
+            </picture>
           </div>
         </div>
         <div class="about__text anim-fade-in">
@@ -130,6 +136,112 @@
             <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Men's Physique</span>
             <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg> Sporty walki</span>
             <span class="about__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> Siła &amp; motoryka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="parallax-divider" data-parallax-bg>
+    <picture>
+      <source srcset="photos/parallax-comp.avif" type="image/avif">
+      <source srcset="photos/parallax-comp.webp" type="image/webp">
+      <img src="photos/trainer-comp3.webp" alt="" class="parallax-divider__img" loading="lazy">
+    </picture>
+    <div class="parallax-divider__overlay"></div>
+    <div class="parallax-divider__content anim-fade-in">
+      <span class="parallax-divider__quote">Dyscyplina pokonuje talent,<br>gdy talent nie ma dyscypliny</span>
+    </div>
+  </div>
+
+  
+  <section class="photo-gallery" id="galeria">
+    <div class="container">
+      <div class="photo-gallery__header anim-fade-in">
+        <span class="section-tag">Galeria</span>
+        <h2 class="section-title">Treningi, zawody<br>&amp; kulisy</h2>
+        <p class="photo-gallery__subtitle">Zaglądnij za kulisy mojej pracy - od codziennych treningów, przez przygotowania do zawodów, aż po scenę men's physique.</p>
+      </div>
+      <div class="photo-gallery__grid anim-fade-in">
+        <div class="photo-gallery__item photo-gallery__item--tall" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-posed.avif" type="image/avif">
+            <source srcset="photos/trainer-posed.webp" type="image/webp">
+            <img src="photos/trainer-posed.webp" alt="Dominik Maik - pozowane zdjęcie sylwetkowe" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Men's Physique</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-comp1.avif" type="image/avif">
+            <source srcset="photos/trainer-comp1.webp" type="image/webp">
+            <img src="photos/trainer-comp1.webp" alt="Dominik Maik - zawody sylwetkowe" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Zawody</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-comp2.avif" type="image/avif">
+            <source srcset="photos/trainer-comp2.webp" type="image/webp">
+            <img src="photos/trainer-comp2.webp" alt="Dominik Maik - scena zawodów" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Zawody</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-gym-portrait.avif" type="image/avif">
+            <source srcset="photos/trainer-gym-portrait.webp" type="image/webp">
+            <img src="photos/trainer-gym-portrait.webp" alt="Dominik Maik - trening na siłowni" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Trening</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item photo-gallery__item--tall" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-gym-selfie.avif" type="image/avif">
+            <source srcset="photos/trainer-gym-selfie.webp" type="image/webp">
+            <img src="photos/trainer-gym-selfie.webp" alt="Dominik Maik - forma treningowa" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Forma</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-comp3.avif" type="image/avif">
+            <source srcset="photos/trainer-comp3.webp" type="image/webp">
+            <img src="photos/trainer-comp3.webp" alt="Dominik Maik - zawody men's physique" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Men's Physique</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-comp4.avif" type="image/avif">
+            <source srcset="photos/trainer-comp4.webp" type="image/webp">
+            <img src="photos/trainer-comp4.webp" alt="Dominik Maik - na scenie zawodów" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Zawody</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item" data-gallery-reveal>
+          <picture>
+            <source srcset="photos/trainer-training.avif" type="image/avif">
+            <source srcset="photos/trainer-training.webp" type="image/webp">
+            <img src="photos/trainer-training.webp" alt="Dominik Maik - sesja treningowa" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Trening</span>
           </div>
         </div>
       </div>
@@ -175,6 +287,19 @@
       </div>
     </div>
   </section>
+
+  
+  <div class="parallax-divider parallax-divider--alt" data-parallax-bg>
+    <picture>
+      <source srcset="photos/parallax-training.avif" type="image/avif">
+      <source srcset="photos/parallax-training.webp" type="image/webp">
+      <img src="photos/trainer-training.webp" alt="" class="parallax-divider__img" loading="lazy">
+    </picture>
+    <div class="parallax-divider__overlay"></div>
+    <div class="parallax-divider__content anim-fade-in">
+      <span class="parallax-divider__quote">Twoje jutro zaczyna się dziś</span>
+    </div>
+  </div>
 
   
   <section class="offer" id="oferta">
@@ -614,6 +739,7 @@
           <h4 class="footer__heading">Nawigacja</h4>
           <ul class="footer__links">
             <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+            <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
             <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
             <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
             <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
@@ -721,6 +847,43 @@
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
     animEls.forEach(el => animObserver.observe(el));
+    // Parallax scroll effect
+    const parallaxDividers = document.querySelectorAll('[data-parallax-bg]');
+    if (parallaxDividers.length) {
+      let ticking = false;
+      function updateParallax() {
+        var scrollTop = window.pageYOffset;
+        parallaxDividers.forEach(function(div) {
+          var rect = div.getBoundingClientRect();
+          var viewH = window.innerHeight;
+          if (rect.bottom > 0 && rect.top < viewH) {
+            var progress = (rect.top + rect.height) / (viewH + rect.height);
+            var img = div.querySelector('.parallax-divider__img');
+            if (img) img.style.transform = 'translateY(' + ((progress - 0.5) * 80) + 'px) scale(1.05)';
+          }
+        });
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) { requestAnimationFrame(updateParallax); ticking = true; }
+      }, { passive: true });
+      updateParallax();
+    }
+    // Gallery staggered reveal
+    var galleryItems = document.querySelectorAll('[data-gallery-reveal]');
+    if (galleryItems.length) {
+      var galObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !entry.target.classList.contains('revealed')) {
+            var idx = Array.from(galleryItems).indexOf(entry.target);
+            setTimeout(function() {
+              entry.target.classList.add('revealed');
+            }, idx * 100);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+      galleryItems.forEach(function(el) { galObserver.observe(el); });
+    }
     const particlesContainer = document.getElementById('particles');
     if (particlesContainer) {
       for (let i = 0; i < 30; i++) {
