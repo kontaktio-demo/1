@@ -34,6 +34,7 @@
         <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
         <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
         <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
+        <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
         <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
         <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
       </ul>
@@ -53,6 +54,7 @@
       <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
       <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
       <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
+      <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
       <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
       <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
       <li><a href="#kontakt" class="mobile-menu__cta" data-scroll-to="kontakt">Napisz do mnie</a></li>
@@ -115,7 +117,11 @@
       <div class="about__grid">
         <div class="about__image-wrap anim-fade-in">
           <div class="about__image-card" id="aboutImageCard">
-            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" id="aboutPhoto">
+            <picture>
+              <source srcset="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.avif" type="image/avif">
+              <source srcset="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.webp" type="image/webp">
+              <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" id="aboutPhoto">
+            </picture>
           </div>
         </div>
         <div class="about__text anim-fade-in">
@@ -175,6 +181,19 @@
       </div>
     </div>
   </section>
+
+  <!-- Parallax Divider 1 - Competition/Gym -->
+  <div class="parallax-divider" id="parallax1">
+    <picture class="parallax-divider__picture">
+      <source srcset="1/IMG_0695.avif" type="image/avif">
+      <source srcset="1/IMG_0695.webp" type="image/webp">
+      <img src="1/IMG_0695.jpeg" alt="" loading="lazy" decoding="async" class="parallax-divider__img">
+    </picture>
+    <div class="parallax-divider__overlay"></div>
+    <div class="parallax-divider__content anim-fade-in">
+      <span class="parallax-divider__quote">Dyscyplina pokonuje talent,<br>gdy talent nie ma dyscypliny</span>
+    </div>
+  </div>
 
   
   <section class="offer" id="oferta">
@@ -372,6 +391,126 @@
     </div>
   </section>
 
+  <!-- Parallax Divider 2 - Training -->
+  <div class="parallax-divider" id="parallax2">
+    <picture class="parallax-divider__picture">
+      <source srcset="1/IMG_0124.avif" type="image/avif">
+      <source srcset="1/IMG_0124.webp" type="image/webp">
+      <img src="1/IMG_0124.jpeg" alt="" loading="lazy" decoding="async" class="parallax-divider__img">
+    </picture>
+    <div class="parallax-divider__overlay"></div>
+    <div class="parallax-divider__content anim-fade-in">
+      <span class="parallax-divider__quote">Każdy powtórzenie się liczy.<br>Każdy trening przybliża do celu.</span>
+    </div>
+  </div>
+
+  <!-- Photo Gallery Section -->
+  <section class="photo-gallery" id="galeria">
+    <div class="container">
+      <div class="photo-gallery__header anim-fade-in">
+        <span class="section-tag">Galeria</span>
+        <h2 class="section-title">Trening, zawody<br>&amp; pasja</h2>
+        <p class="photo-gallery__subtitle">Kilka kadrów z treningów, zawodów Men's Physique i codziennej pracy nad formą.</p>
+      </div>
+      <div class="photo-gallery__grid">
+        <div class="photo-gallery__item photo-gallery__item--tall anim-fade-in" data-gallery-item>
+          <picture>
+            <source srcset="1/BD7E67D7-6EF2-417B-AF0E-9F55E542325C.avif" type="image/avif">
+            <source srcset="1/BD7E67D7-6EF2-417B-AF0E-9F55E542325C.webp" type="image/webp">
+            <img src="1/BD7E67D7-6EF2-417B-AF0E-9F55E542325C.jpeg" alt="Dominik Maik - pozowanie, forma sylwetkowa" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Men's Physique</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item photo-gallery__item--wide anim-fade-in anim-delay-1" data-gallery-item>
+          <picture>
+            <source srcset="1/IMG_0130.avif" type="image/avif">
+            <source srcset="1/IMG_0130.webp" type="image/webp">
+            <img src="1/IMG_0130.jpeg" alt="Dominik Maik - zawody sylwetkowe" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Zawody</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item anim-fade-in anim-delay-2" data-gallery-item>
+          <picture>
+            <source srcset="1/IMG_7287.avif" type="image/avif">
+            <source srcset="1/IMG_7287.webp" type="image/webp">
+            <img src="1/IMG_7287.jpeg" alt="Dominik Maik - trening na siłowni" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Trening</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item photo-gallery__item--wide anim-fade-in anim-delay-1" data-gallery-item>
+          <picture>
+            <source srcset="1/IMG_0695.avif" type="image/avif">
+            <source srcset="1/IMG_0695.webp" type="image/webp">
+            <img src="1/IMG_0695.jpeg" alt="Dominik Maik - trening siłowy" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Siłownia</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item photo-gallery__item--tall anim-fade-in" data-gallery-item>
+          <picture>
+            <source srcset="1/BA4F23C8-E00D-408D-88C6-1C6302997533.avif" type="image/avif">
+            <source srcset="1/BA4F23C8-E00D-408D-88C6-1C6302997533.webp" type="image/webp">
+            <img src="1/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - forma treningowa" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Forma</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item anim-fade-in anim-delay-2" data-gallery-item>
+          <picture>
+            <source srcset="1/IMG_1235.avif" type="image/avif">
+            <source srcset="1/IMG_1235.webp" type="image/webp">
+            <img src="1/IMG_1235.jpeg" alt="Dominik Maik - przygotowania do zawodów" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Przygotowania</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item photo-gallery__item--wide anim-fade-in anim-delay-1" data-gallery-item>
+          <picture>
+            <source srcset="1/IMG_0704.avif" type="image/avif">
+            <source srcset="1/IMG_0704.webp" type="image/webp">
+            <img src="1/IMG_0704.jpeg" alt="Dominik Maik - trening i forma" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Kulisy</span>
+          </div>
+        </div>
+        <div class="photo-gallery__item anim-fade-in anim-delay-3" data-gallery-item>
+          <picture>
+            <source srcset="1/IMG_0124.avif" type="image/avif">
+            <source srcset="1/IMG_0124.webp" type="image/webp">
+            <img src="1/IMG_0124.jpeg" alt="Dominik Maik - na zawodach" loading="lazy" decoding="async">
+          </picture>
+          <div class="photo-gallery__item-overlay">
+            <span class="photo-gallery__item-tag">Backstage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="photo-lightbox" id="photoLightbox">
+      <button class="photo-lightbox__close" id="lightboxClose" aria-label="Zamknij">&times;</button>
+      <button class="photo-lightbox__arrow photo-lightbox__arrow--prev" id="lightboxPrev" aria-label="Poprzednie">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="photo-lightbox__arrow photo-lightbox__arrow--next" id="lightboxNext" aria-label="Następne">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <div class="photo-lightbox__content">
+        <img src="" alt="" class="photo-lightbox__img" id="lightboxImg">
+      </div>
+    </div>
+  </section>
+
   <section class="transformations" id="transformacje">
     <div class="container">
       <div class="transformations__header anim-fade-in">
@@ -383,48 +522,56 @@
           <div class="tf-carousel__track" id="tfTrack">
             <div class="tf-carousel__slide" data-tf-slide="0">
               <picture>
+                <source srcset="photos/IMG_2205.avif" type="image/avif">
                 <source srcset="photos/IMG_2205.webp" type="image/webp">
                 <img src="photos/IMG_2205.png" alt="Transformacja podopiecznego 1" fetchpriority="high" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="1">
               <picture>
+                <source srcset="photos/IMG_2206.avif" type="image/avif">
                 <source srcset="photos/IMG_2206.webp" type="image/webp">
                 <img src="photos/IMG_2206.png" alt="Transformacja podopiecznego 2" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="2">
               <picture>
+                <source srcset="photos/IMG_2207.avif" type="image/avif">
                 <source srcset="photos/IMG_2207.webp" type="image/webp">
                 <img src="photos/IMG_2207.png" alt="Transformacja podopiecznego 3" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="3">
               <picture>
+                <source srcset="photos/IMG_2208.avif" type="image/avif">
                 <source srcset="photos/IMG_2208.webp" type="image/webp">
                 <img src="photos/IMG_2208.png" alt="Transformacja podopiecznego 4" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="4">
               <picture>
+                <source srcset="photos/IMG_2209.avif" type="image/avif">
                 <source srcset="photos/IMG_2209.webp" type="image/webp">
                 <img src="photos/IMG_2209.png" alt="Transformacja podopiecznego 5" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="5">
               <picture>
+                <source srcset="photos/IMG_2211.avif" type="image/avif">
                 <source srcset="photos/IMG_2211.webp" type="image/webp">
                 <img src="photos/IMG_2211.png" alt="Transformacja podopiecznego 6" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="6">
               <picture>
+                <source srcset="photos/IMG_2212.avif" type="image/avif">
                 <source srcset="photos/IMG_2212.webp" type="image/webp">
                 <img src="photos/IMG_2212.png" alt="Transformacja podopiecznego 7" decoding="async">
               </picture>
             </div>
             <div class="tf-carousel__slide" data-tf-slide="7">
               <picture>
+                <source srcset="photos/IMG_2213.avif" type="image/avif">
                 <source srcset="photos/IMG_2213.webp" type="image/webp">
                 <img src="photos/IMG_2213.png" alt="Transformacja podopiecznego 8" decoding="async">
               </picture>
@@ -617,6 +764,7 @@
             <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
             <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
             <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
+            <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
             <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
             <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
           </ul>
@@ -920,6 +1068,102 @@
         }
       });
     });
+    // Photo Gallery Lightbox
+    (function() {
+      var lightbox = document.getElementById('photoLightbox');
+      var lightboxImg = document.getElementById('lightboxImg');
+      var lightboxClose = document.getElementById('lightboxClose');
+      var lightboxPrev = document.getElementById('lightboxPrev');
+      var lightboxNext = document.getElementById('lightboxNext');
+      var galleryItems = document.querySelectorAll('[data-gallery-item]');
+      if (!lightbox || !galleryItems.length) return;
+      var currentIndex = 0;
+      function getFullSrc(item) {
+        var picture = item.querySelector('picture');
+        if (!picture) return '';
+        var avif = picture.querySelector('source[type="image/avif"]');
+        var webp = picture.querySelector('source[type="image/webp"]');
+        var img = picture.querySelector('img');
+        // Try to use the best available format
+        var testAvif = new Image();
+        if (avif) {
+          testAvif.src = 'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=';
+          if (testAvif.complete && testAvif.naturalHeight > 0) {
+            return avif.getAttribute('srcset');
+          }
+        }
+        if (webp) return webp.getAttribute('srcset');
+        if (img) return img.getAttribute('src');
+        return '';
+      }
+      function openLightbox(index) {
+        currentIndex = index;
+        var src = getFullSrc(galleryItems[currentIndex]);
+        lightboxImg.src = src;
+        lightboxImg.alt = galleryItems[currentIndex].querySelector('img').alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        lightboxImg.src = '';
+      }
+      function navigateLightbox(dir) {
+        currentIndex = ((currentIndex + dir) % galleryItems.length + galleryItems.length) % galleryItems.length;
+        var src = getFullSrc(galleryItems[currentIndex]);
+        lightboxImg.style.opacity = '0';
+        setTimeout(function() {
+          lightboxImg.src = src;
+          lightboxImg.alt = galleryItems[currentIndex].querySelector('img').alt;
+          lightboxImg.style.opacity = '1';
+        }, 200);
+      }
+      galleryItems.forEach(function(item, i) {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', function() { openLightbox(i); });
+      });
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxPrev.addEventListener('click', function() { navigateLightbox(-1); });
+      lightboxNext.addEventListener('click', function() { navigateLightbox(1); });
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox || e.target.classList.contains('photo-lightbox__content')) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        else if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        else if (e.key === 'ArrowRight') navigateLightbox(1);
+      });
+    })();
+    // Parallax scroll effect
+    (function() {
+      var parallaxDividers = document.querySelectorAll('.parallax-divider');
+      if (!parallaxDividers.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var ticking = false;
+      function updateParallax() {
+        var scrollY = window.pageYOffset;
+        parallaxDividers.forEach(function(div) {
+          var rect = div.getBoundingClientRect();
+          var divTop = rect.top + scrollY;
+          var divH = div.offsetHeight;
+          if (scrollY + window.innerHeight > divTop && scrollY < divTop + divH) {
+            var progress = (scrollY + window.innerHeight - divTop) / (window.innerHeight + divH);
+            var offset = (progress - 0.5) * 80;
+            var img = div.querySelector('.parallax-divider__img');
+            if (img) img.style.transform = 'translate3d(0,' + offset + 'px,0) scale(1.15)';
+          }
+        });
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      }, { passive: true });
+      updateParallax();
+    })();
   })();
   </script>
 
