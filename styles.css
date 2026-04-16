@@ -1300,8 +1300,8 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 }
 .photo-gallery__grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  grid-auto-rows:280px;
+  grid-template-columns:repeat(3,1fr);
+  grid-auto-rows:260px;
   gap:16px;
   grid-auto-flow:dense;
   position:relative;z-index:1;
@@ -1455,7 +1455,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   .footer__brand{justify-content:center}
   .footer__bottom{text-align:center}
   .photo-gallery__grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:240px}
-  .photo-gallery__item--tall{grid-row:span 2}
   .parallax-divider{height:clamp(240px,35vw,380px)}
   .lightbox__content img{max-width:95vw;max-height:80vh}
 }
