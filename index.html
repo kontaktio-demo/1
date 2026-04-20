@@ -6,40 +6,46 @@
   <meta name="description" content="Dominik Maik - Trener personalny. Treningi indywidualne dopasowane do Ciebie.">
   <meta name="theme-color" content="#0a0e17">
   <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self' https://chatbot-backend-x2cy.onrender.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
   <title>Dominik Maik - Trener Personalny | maiktrenuje.pl</title>
+  <link rel="canonical" href="/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://chatbot-backend-x2cy.onrender.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="photos/IMG_2205.webp" type="image/webp">
+  <link rel="preload" as="image" href="photos/IMG_2205.webp" type="image/webp" fetchpriority="high">
 </head>
 <body>
 
+  <a href="#o-mnie" class="skip-link" data-scroll-to="o-mnie">Przejdź do treści</a>
   
-  <div class="loader" id="pageLoader">
+  <div class="loader" id="pageLoader" aria-hidden="true">
     <div class="loader__pulse"></div>
     <div class="loader__text">DM</div>
   </div>
 
   
-  <nav class="nav" id="mainNav">
+  <nav class="nav" id="mainNav" aria-label="Główna nawigacja">
     <div class="nav__inner">
-      <a href="#" class="nav__brand">
+      <a href="/" class="nav__brand" data-scroll-to="hero" aria-label="Dominik Maik - strona główna">
         <span class="nav__logo-circle">DM</span>
         <span class="nav__name">Dominik Maik</span>
       </a>
       <ul class="nav__links" id="navLinks">
-        <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
-        <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
-        <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
-        <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
-        <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
-        <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
-        <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
+        <li><a href="/o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+        <li><a href="/galeria" data-scroll-to="galeria">Galeria</a></li>
+        <li><a href="/oferta" data-scroll-to="oferta">Oferta</a></li>
+        <li><a href="/cennik" data-scroll-to="cennik">Cennik</a></li>
+        <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+        <li><a href="/transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+        <li><a href="/kontakt" data-scroll-to="kontakt">Kontakt</a></li>
       </ul>
-      <a href="#kontakt" class="nav__cta" data-scroll-to="kontakt">Napisz do mnie</a>
-      <button class="nav__hamburger" id="navHamburger" aria-label="Menu">
+      <a href="/kontakt" class="nav__cta" data-scroll-to="kontakt">Napisz do mnie</a>
+      <button class="nav__hamburger" id="navHamburger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -48,16 +54,16 @@
   </nav>
 
   
-  <div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <ul class="mobile-menu__links">
-      <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
-      <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
-      <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
-      <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
-      <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
-      <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
-      <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
-      <li><a href="#kontakt" class="mobile-menu__cta" data-scroll-to="kontakt">Napisz do mnie</a></li>
+      <li><a href="/o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+      <li><a href="/galeria" data-scroll-to="galeria">Galeria</a></li>
+      <li><a href="/oferta" data-scroll-to="oferta">Oferta</a></li>
+      <li><a href="/cennik" data-scroll-to="cennik">Cennik</a></li>
+      <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+      <li><a href="/transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+      <li><a href="/kontakt" data-scroll-to="kontakt">Kontakt</a></li>
+      <li><a href="/kontakt" class="mobile-menu__cta" data-scroll-to="kontakt">Napisz do mnie</a></li>
     </ul>
   </div>
 
@@ -74,8 +80,8 @@
         Profesjonalny trening personalny dopasowany do Twoich&nbsp;celów.<br>Skuteczność poparta doświadczeniem i&nbsp;wiedzą.
       </p>
       <div class="hero__buttons anim-slide-up anim-delay-5">
-        <a href="#kontakt" class="btn btn--primary" data-scroll-to="kontakt">Napisz do mnie</a>
-        <a href="#o-mnie" class="btn btn--glass" data-scroll-to="o-mnie">Poznaj mnie bliżej</a>
+        <a href="/kontakt" class="btn btn--primary" data-scroll-to="kontakt">Napisz do mnie</a>
+        <a href="/o-mnie" class="btn btn--glass" data-scroll-to="o-mnie">Poznaj mnie bliżej</a>
       </div>
     </div>
     <div class="hero__scroll-indicator">
@@ -117,7 +123,7 @@
       <div class="about__grid">
         <div class="about__image-wrap anim-fade-in">
           <div class="about__image-card" id="aboutImageCard">
-            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" id="aboutPhoto">
+            <img src="photos/BA4F23C8-E00D-408D-88C6-1C6302997533.jpeg" alt="Dominik Maik - trener personalny" class="about__image" loading="lazy" decoding="async" id="aboutPhoto">
           </div>
         </div>
         <div class="about__text anim-fade-in">
@@ -140,7 +146,7 @@
 
   
   <div class="parallax-divider" data-parallax-bg>
-    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80&fit=crop&crop=center" alt="Wnętrze siłowni ze sprzętem treningowym" class="parallax-divider__img" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80&fit=crop&crop=center" alt="" aria-hidden="true" class="parallax-divider__img" loading="lazy" decoding="async">
     <div class="parallax-divider__overlay"></div>
     <div class="parallax-divider__content anim-fade-in">
       <span class="parallax-divider__quote">Dyscyplina pokonuje talent,<br>gdy talent nie ma dyscypliny</span>
@@ -282,7 +288,7 @@
 
   
   <div class="parallax-divider parallax-divider--alt" data-parallax-bg>
-    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=80&fit=crop&crop=center" alt="Trening na siłowni z ciężarami" class="parallax-divider__img" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=80&fit=crop&crop=center" alt="" aria-hidden="true" class="parallax-divider__img" loading="lazy" decoding="async">
     <div class="parallax-divider__overlay"></div>
     <div class="parallax-divider__content anim-fade-in">
       <span class="parallax-divider__quote">Twoje jutro zaczyna się dziś</span>
@@ -734,20 +740,20 @@
         <div class="footer__col">
           <h4 class="footer__heading">Nawigacja</h4>
           <ul class="footer__links">
-            <li><a href="#o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
-            <li><a href="#galeria" data-scroll-to="galeria">Galeria</a></li>
-            <li><a href="#oferta" data-scroll-to="oferta">Oferta</a></li>
-            <li><a href="#cennik" data-scroll-to="cennik">Cennik</a></li>
-            <li><a href="#opinie" data-scroll-to="opinie">Opinie</a></li>
-            <li><a href="#transformacje" data-scroll-to="transformacje">Transformacje</a></li>
-            <li><a href="#kontakt" data-scroll-to="kontakt">Kontakt</a></li>
+            <li><a href="/o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
+            <li><a href="/galeria" data-scroll-to="galeria">Galeria</a></li>
+            <li><a href="/oferta" data-scroll-to="oferta">Oferta</a></li>
+            <li><a href="/cennik" data-scroll-to="cennik">Cennik</a></li>
+            <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+            <li><a href="/transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+            <li><a href="/kontakt" data-scroll-to="kontakt">Kontakt</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4 class="footer__heading">Informacje prawne</h4>
           <ul class="footer__links">
-            <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
-            <li><a href="regulamin.html">Regulamin serwisu</a></li>
+            <li><a href="polityka-prywatnosci/">Polityka prywatności</a></li>
+            <li><a href="regulamin/">Regulamin serwisu</a></li>
             <li><a href="#" id="footerCookieSettings">Ustawienia cookies</a></li>
           </ul>
         </div>
@@ -774,75 +780,253 @@
     data-kontaktio
     data-client="maik"
     data-backend="https://chatbot-backend-x2cy.onrender.com"
+    defer
   ></script>
 
   <script>
   (function() {
     'use strict';
-    const loader = document.getElementById('pageLoader');
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        loader.classList.add('loaded');
+
+    // ---------- Pretty URL routing ----------
+    // Whitelist of known sections (used to validate URL segments and prevent open-redirect / DOM-XSS).
+    var SECTIONS = ['hero','o-mnie','galeria','oferta','cennik','opinie','transformacje','kontakt'];
+    var SECTION_SET = Object.create(null);
+    SECTIONS.forEach(function(s){ SECTION_SET[s] = true; });
+
+    function trimSlashes(p) { return String(p || '').replace(/^\/+|\/+$/g, ''); }
+
+    function getBasePath() {
+      // Accepts paths like "/", "/oferta", "/oferta/", "/sub/", "/sub/oferta"
+      var path = location.pathname.replace(/\/+$/, '');
+      var parts = path.split('/');
+      var last = parts[parts.length - 1] || '';
+      if (Object.prototype.hasOwnProperty.call(SECTION_SET, last)) parts.pop();
+      var base = parts.join('/');
+      if (!base.endsWith('/')) base += '/';
+      return base;
+    }
+
+    var BASE = getBasePath();
+
+    function urlForSection(id) {
+      if (!id || id === 'hero') return BASE;
+      if (!Object.prototype.hasOwnProperty.call(SECTION_SET, id)) return BASE;
+      return BASE + id;
+    }
+
+    function setActiveLink(id) {
+      var links = document.querySelectorAll('[data-scroll-to]');
+      for (var i = 0; i < links.length; i++) {
+        var a = links[i];
+        var match = a.getAttribute('data-scroll-to') === id;
+        a.classList.toggle('is-active', match);
+        if (match) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      }
+    }
+
+    function scrollToSection(id, smooth) {
+      var target = document.getElementById(id);
+      if (!target) {
+        // Fallback to top for hero
+        window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+        return;
+      }
+      target.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+    }
+
+    function navigate(id, push) {
+      if (!Object.prototype.hasOwnProperty.call(SECTION_SET, id)) return;
+      suppressSpyTemporarily(1200);
+      scrollToSection(id, true);
+      var newUrl = urlForSection(id);
+      try {
+        if (push) history.pushState({ section: id }, '', newUrl);
+        else history.replaceState({ section: id }, '', newUrl);
+      } catch (e) { /* ignore (e.g. file:// origin) */ }
+      setActiveLink(id);
+    }
+
+    var suppressSpy = false;
+    var suppressTimer = null;
+    function suppressSpyTemporarily(ms) {
+      suppressSpy = true;
+      if (suppressTimer) clearTimeout(suppressTimer);
+      suppressTimer = setTimeout(function(){ suppressSpy = false; }, ms || 1000);
+    }
+
+    // ---------- Loader ----------
+    var loader = document.getElementById('pageLoader');
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        if (loader) loader.classList.add('loaded');
         document.body.classList.add('page-loaded');
       }, 600);
     });
-    const aboutPhoto = document.getElementById('aboutPhoto');
+
+    // ---------- Image fallbacks ----------
+    var aboutPhoto = document.getElementById('aboutPhoto');
     if (aboutPhoto) {
       aboutPhoto.addEventListener('error', function() {
         this.style.display = 'none';
-        document.getElementById('aboutImageCard').classList.add('no-photo');
+        var card = document.getElementById('aboutImageCard');
+        if (card) card.classList.add('no-photo');
       });
     }
-    const hamburger = document.getElementById('navHamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileLinks = mobileMenu.querySelectorAll('a');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-      document.body.classList.toggle('menu-open');
-    });
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        document.body.classList.remove('menu-open');
+
+    // ---------- Mobile menu ----------
+    var hamburger = document.getElementById('navHamburger');
+    var mobileMenu = document.getElementById('mobileMenu');
+    function closeMobileMenu() {
+      if (!hamburger || !mobileMenu) return;
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    }
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', function() {
+        var isOpen = hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        mobileMenu.setAttribute('aria-hidden', String(!isOpen));
       });
-    });
-    const nav = document.getElementById('mainNav');
-    let lastScroll = 0;
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll <= 0) {
-        nav.classList.remove('nav--hidden', 'nav--scrolled');
-      } else if (currentScroll > lastScroll && currentScroll > 80) {
-        nav.classList.add('nav--hidden');
-      } else if (currentScroll < lastScroll) {
-        nav.classList.remove('nav--hidden');
-        nav.classList.add('nav--scrolled');
-      }
-      lastScroll = currentScroll;
-    });
-    document.querySelectorAll('[data-scroll-to]').forEach(el => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = el.getAttribute('data-scroll-to');
-        const target = document.getElementById(targetId);
-        if (target) {
+    }
+
+    // ---------- Nav: hide on scroll down, show on scroll up ----------
+    var nav = document.getElementById('mainNav');
+    var lastScroll = 0;
+    var navTicking = false;
+    function onScroll() {
+      var currentScroll = window.pageYOffset;
+      if (nav) {
+        if (currentScroll <= 0) {
+          nav.classList.remove('nav--hidden', 'nav--scrolled');
+        } else if (currentScroll > lastScroll && currentScroll > 80) {
+          nav.classList.add('nav--hidden');
+        } else if (currentScroll < lastScroll) {
           nav.classList.remove('nav--hidden');
           nav.classList.add('nav--scrolled');
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+      }
+      lastScroll = currentScroll;
+      navTicking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!navTicking) {
+        requestAnimationFrame(onScroll);
+        navTicking = true;
+      }
+    }, { passive: true });
+
+    // ---------- Section nav clicks (delegation-friendly) ----------
+    document.querySelectorAll('[data-scroll-to]').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        var targetId = el.getAttribute('data-scroll-to');
+        if (!Object.prototype.hasOwnProperty.call(SECTION_SET, targetId)) return;
+        // Allow opening in new tab/window with modifier keys or middle click
+        if (e.defaultPrevented || e.button > 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        if (nav) {
+          nav.classList.remove('nav--hidden');
+          if (targetId !== 'hero') nav.classList.add('nav--scrolled');
+        }
+        navigate(targetId, true);
+        closeMobileMenu();
       });
     });
-    const animEls = document.querySelectorAll('.anim-fade-in, .anim-slide-up');
-    const animObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+
+    // ---------- Initial route resolution ----------
+    var initialSection = null;
+    // 1) Coming from 404.html redirect
+    try {
+      var stored = sessionStorage.getItem('__redirectSection');
+      if (stored) {
+        sessionStorage.removeItem('__redirectSection');
+        if (Object.prototype.hasOwnProperty.call(SECTION_SET, stored)) initialSection = stored;
+      }
+    } catch (e) { /* ignore */ }
+    // 2) From pathname
+    if (!initialSection) {
+      var pathLast = trimSlashes(location.pathname).split('/').pop();
+      if (Object.prototype.hasOwnProperty.call(SECTION_SET, pathLast)) initialSection = pathLast;
+    }
+    // 3) From hash (legacy)
+    if (!initialSection && location.hash) {
+      var hashId = location.hash.replace(/^#/, '');
+      if (Object.prototype.hasOwnProperty.call(SECTION_SET, hashId)) initialSection = hashId;
+    }
+    if (initialSection && initialSection !== 'hero') {
+      try { history.replaceState({ section: initialSection }, '', urlForSection(initialSection)); } catch(e) {}
+      window.addEventListener('load', function() {
+        setTimeout(function() { scrollToSection(initialSection, false); setActiveLink(initialSection); }, 60);
+      });
+    } else {
+      setActiveLink('hero');
+    }
+
+    // ---------- Back/forward ----------
+    window.addEventListener('popstate', function() {
+      var pathLast = trimSlashes(location.pathname).split('/').pop();
+      var id = Object.prototype.hasOwnProperty.call(SECTION_SET, pathLast) ? pathLast : 'hero';
+      scrollToSection(id, true);
+      setActiveLink(id);
+    });
+
+    // ---------- Scroll-spy: keep URL & active link in sync ----------
+    var spyTargets = SECTIONS
+      .filter(function(s){ return s !== 'hero'; })
+      .map(function(id){ return document.getElementById(id); })
+      .filter(Boolean);
+    var currentSpy = '';
+    if ('IntersectionObserver' in window && spyTargets.length) {
+      var spyObs = new IntersectionObserver(function(entries) {
+        if (suppressSpy) return;
+        if (window.pageYOffset < 80) return; // at top → hero, handled below
+        // Pick the entry closest to top among intersecting
+        var best = null;
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            if (!best || entry.boundingClientRect.top < best.boundingClientRect.top) best = entry;
+          }
+        });
+        if (!best) return;
+        var id = best.target.id;
+        if (id === currentSpy) return;
+        currentSpy = id;
+        setActiveLink(id);
+        var newUrl = urlForSection(id);
+        if (location.pathname !== newUrl && location.pathname.replace(/\/+$/, '') !== newUrl.replace(/\/+$/, '')) {
+          try { history.replaceState({ section: id }, '', newUrl); } catch(e) {}
+        }
+      }, { rootMargin: '-30% 0px -55% 0px', threshold: 0 });
+      spyTargets.forEach(function(el){ spyObs.observe(el); });
+      // When scrolled to top, restore base URL
+      window.addEventListener('scroll', function() {
+        if (suppressSpy) return;
+        if (window.pageYOffset < 80 && currentSpy !== 'hero') {
+          currentSpy = 'hero';
+          setActiveLink('hero');
+          if (location.pathname !== BASE) {
+            try { history.replaceState({ section: 'hero' }, '', BASE); } catch(e) {}
+          }
+        }
+      }, { passive: true });
+    }
+
+    // ---------- Generic in-view animations ----------
+    var animEls = document.querySelectorAll('.anim-fade-in, .anim-slide-up');
+    var animObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          animObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-    animEls.forEach(el => animObserver.observe(el));
+    animEls.forEach(function(el){ animObserver.observe(el); });
     // Parallax scroll effect
     const parallaxDividers = document.querySelectorAll('[data-parallax-bg]');
     if (parallaxDividers.length) {
@@ -1111,6 +1295,6 @@
   </script>
 
   
-  <script src="cookie-consent.js"></script>
+  <script src="cookie-consent.js" defer></script>
 </body>
 </html>
