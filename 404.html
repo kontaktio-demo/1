@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0e17">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <title>Strona nie znaleziona | maiktrenuje.pl</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+  // SPA pretty-URL fallback: if the path is a known section, redirect to root with a hint.
+  (function() {
+    var SECTIONS = ['o-mnie','galeria','oferta','cennik','opinie','transformacje','kontakt'];
+    var path = location.pathname.replace(/\/+$/, '');
+    var parts = path.split('/');
+    var last = parts[parts.length - 1] || '';
+    if (SECTIONS.indexOf(last) === -1) return; // genuine 404
+    parts.pop();
+    var redirectTo = parts.join('/') + '/';
+    try { sessionStorage.setItem('__redirectSection', last); } catch (e) {}
+    if (redirectTo !== location.pathname) {
+      location.replace(redirectTo);
+    }
+  })();
+  </script>
+  <style>
+    .nf{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;background:var(--bg)}
+    .nf__inner{max-width:520px}
+    .nf__code{font-size:clamp(80px,16vw,160px);line-height:1;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent-light));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.04em}
+    .nf__title{font-size:clamp(1.4rem,3vw,2rem);font-weight:700;margin:16px 0 12px;color:var(--white)}
+    .nf__text{color:var(--text-muted);margin-bottom:32px}
+    .nf__btn{display:inline-block;text-decoration:none;padding:14px 28px;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:600;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+    .nf__btn:hover{background:var(--accent-light);transform:translateY(-1px);box-shadow:0 6px 24px var(--accent-glow)}
+  </style>
+</head>
+<body class="page-loaded">
+  <main class="nf">
+    <div class="nf__inner">
+      <div class="nf__code">404</div>
+      <h1 class="nf__title">Nie znaleziono strony</h1>
+      <p class="nf__text">Strona, której szukasz, nie istnieje lub została przeniesiona. Wróć na stronę główną, aby kontynuować.</p>
+      <a href="/" class="nf__btn">Wróć na stronę główną</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1562,3 +1562,51 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   .photo-gallery__item-tag{transform:translateY(0)}
   .parallax-divider{height:220px}
 }
+
+/* ---------- Accessibility & polish (added) ---------- */
+.skip-link{
+  position:fixed;top:8px;left:8px;
+  padding:10px 16px;border-radius:10px;
+  background:var(--accent);color:var(--bg);
+  font-weight:700;text-decoration:none;
+  transform:translateY(-200%);
+  transition:transform .25s ease;
+  z-index:10000;
+}
+.skip-link:focus,.skip-link:focus-visible{transform:translateY(0);outline:2px solid var(--accent-light);outline-offset:2px}
+
+/* Consistent keyboard focus across interactive elements */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+  outline:2px solid var(--accent-light);
+  outline-offset:3px;
+  border-radius:6px;
+}
+/* Suppress ugly default focus ring when the user is using a mouse */
+a:focus:not(:focus-visible),button:focus:not(:focus-visible){outline:none}
+
+/* Active nav link state (driven by scroll-spy / pretty URL routing) */
+.nav__links a.is-active{color:var(--white)}
+.nav__links a.is-active::after{width:100%}
+.mobile-menu__links a.is-active{color:var(--accent-light)}
+
+/* Ensure scroll-target alignment under fixed nav */
+section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
+
+/* Honor user motion preferences */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  body.page-loaded .anim-slide-up,
+  body.page-loaded .anim-fade-in{opacity:1 !important;transform:none !important;transition:none !important}
+  .particle,.hero__particles{display:none !important}
+}

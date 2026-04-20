@@ -74,7 +74,7 @@
     overlay.innerHTML = [
       '<div class="cc-banner">',
       '  <div class="cc-title">🍪 Ta strona używa plików cookies</div>',
-      '  <div class="cc-desc">Używamy cookies, aby zapewnić prawidłowe działanie strony, analizować ruch i personalizować treści. Możesz zaakceptować wszystkie, odrzucić opcjonalne lub dostosować swoje preferencje. Więcej informacji w naszej <a href="polityka-prywatnosci.html">Polityce Prywatności</a>.</div>',
+      '  <div class="cc-desc">Używamy cookies, aby zapewnić prawidłowe działanie strony, analizować ruch i personalizować treści. Możesz zaakceptować wszystkie, odrzucić opcjonalne lub dostosować swoje preferencje. Więcej informacji w naszej <a href="/polityka-prywatnosci/">Polityce Prywatności</a>.</div>',
       '  <div class="cc-buttons">',
       '    <button class="cc-btn cc-btn--accept" id="ccAcceptAll">Akceptuję wszystkie</button>',
       '    <button class="cc-btn cc-btn--reject" id="ccRejectAll">Tylko niezbędne</button>',
