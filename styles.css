@@ -1225,7 +1225,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 .legal__content a:hover{color:var(--accent-light)}
 .legal__content strong{color:var(--accent-light);font-weight:600}
 
-/* ── Parallax Dividers ── */
 .parallax-divider{
   position:relative;
   height:clamp(320px,40vw,500px);
@@ -1277,7 +1276,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   filter:drop-shadow(0 4px 24px rgba(0,0,0,.4));
 }
 
-/* ── Photo Gallery Section ── */
 .photo-gallery{
   padding:100px 0;
   background:var(--bg);
@@ -1360,7 +1358,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   transform:translateY(0);
 }
 
-/* Gallery reveal animation */
 [data-gallery-reveal]{
   opacity:0;
   transform:translateY(30px) scale(.96);
@@ -1371,7 +1368,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   transform:translateY(0) scale(1);
 }
 
-/* ── Lightbox ── */
 .lightbox{
   position:fixed;inset:0;z-index:10000;
   background:rgba(10,14,23,.95);
@@ -1413,7 +1409,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   background:var(--accent);transform:scale(1.1);
 }
 
-/* ── Accent line between sections ── */
 .parallax-divider::after{
   content:'';position:absolute;bottom:0;left:10%;right:10%;
   height:1px;z-index:3;
@@ -1563,7 +1558,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
   .parallax-divider{height:220px}
 }
 
-/* ---------- Accessibility & polish (added) ---------- */
 .skip-link{
   position:fixed;top:8px;left:8px;
   padding:10px 16px;border-radius:10px;
@@ -1575,7 +1569,6 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 }
 .skip-link:focus,.skip-link:focus-visible{transform:translateY(0);outline:2px solid var(--accent-light);outline-offset:2px}
 
-/* Consistent keyboard focus across interactive elements */
 a:focus-visible,
 button:focus-visible,
 [role="button"]:focus-visible,
@@ -1586,18 +1579,14 @@ select:focus-visible{
   outline-offset:3px;
   border-radius:6px;
 }
-/* Suppress ugly default focus ring when the user is using a mouse */
 a:focus:not(:focus-visible),button:focus:not(:focus-visible){outline:none}
 
-/* Active nav link state (driven by scroll-spy / pretty URL routing) */
 .nav__links a.is-active{color:var(--white)}
 .nav__links a.is-active::after{width:100%}
 .mobile-menu__links a.is-active{color:var(--accent-light)}
 
-/* Ensure scroll-target alignment under fixed nav */
 section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
 
-/* Honor user motion preferences */
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{
