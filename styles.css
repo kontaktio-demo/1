@@ -232,7 +232,7 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 .hero::before{
   content:'';position:absolute;inset:0;
   background:
-    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=60&auto=format') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=50&auto=format') center/cover no-repeat;
   opacity:.06;
   pointer-events:none;
 }
