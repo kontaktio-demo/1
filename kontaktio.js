@@ -503,7 +503,7 @@
       launcher.style.width = "56px";
       launcher.style.height = "56px";
       launcher.style.borderRadius = "999px";
-      launcher.style.background = cfg.theme.buttonBg;
+      launcher.style.background = "#10b981";
       launcher.style.color = cfg.theme.buttonText;
       launcher.style.bottom = `${offsetY}px`;
       launcher.style[pos] = `${offsetX}px`;
@@ -553,7 +553,7 @@
       });
 
       const sendBtn = el("button", { class: "kontaktio-send", type: "button" }, ["Wyslij"]);
-      sendBtn.style.background = cfg.theme.buttonBg;
+      sendBtn.style.background = "#10b981";
       sendBtn.style.color = cfg.theme.buttonText;
       sendBtn.addEventListener("click", () => sendMessage(input.value));
 
