@@ -232,8 +232,7 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 .hero::before{
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.4) 0%, transparent 55%),
-    radial-gradient(ellipse at 70% 80%, rgba(255,255,255,.3) 0%, transparent 55%);
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=50&auto=format') center/cover no-repeat;
   opacity:.06;
   pointer-events:none;
 }
@@ -577,7 +576,9 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 }
 .offer::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.02) 0%, transparent 60%);
+  background:
+    url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1920&q=60&auto=format') center/cover no-repeat;
+  opacity:.03;
   pointer-events:none;
 }
 .offer::after{
@@ -621,7 +622,9 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 }
 .pricing::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 50% 100%, rgba(255,255,255,.02) 0%, transparent 60%);
+  background:
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=60&auto=format') center/cover no-repeat;
+  opacity:.04;
   pointer-events:none;
 }
 .pricing__header{text-align:center;margin-bottom:56px;position:relative;z-index:1}
@@ -826,7 +829,8 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 
 .transformations::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.02) 0%, transparent 60%);
+  background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=60&auto=format') center/cover no-repeat;
+  opacity:.05;
   pointer-events:none;
 }
 
@@ -1136,7 +1140,9 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 }
 .contact::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.02) 0%, transparent 60%);
+  background:
+    url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1920&q=60&auto=format') center/cover no-repeat;
+  opacity:.04;
   pointer-events:none;
 }
 .contact__inner{max-width:560px;margin:0 auto;position:relative;z-index:1}
@@ -1658,25 +1664,4 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
   body.page-loaded .anim-slide-up,
   body.page-loaded .anim-fade-in{opacity:1 !important;transform:none !important;transition:none !important}
   .particle,.hero__particles{display:none !important}
-}
-
-/* Mobile performance optimizations: lighter animations, faster LCP, fewer non-composited animations */
-@media(max-width:768px){
-  /* Speed up hero entrance so LCP text reaches its final paint quickly */
-  body.page-loaded .anim-slide-up,
-  body.page-loaded .anim-fade-in{transition-duration:.4s}
-  body.page-loaded .anim-delay-1{transition-delay:.05s}
-  body.page-loaded .anim-delay-2{transition-delay:.1s}
-  body.page-loaded .anim-delay-3{transition-delay:.15s}
-  body.page-loaded .anim-delay-4{transition-delay:.2s}
-  body.page-loaded .anim-delay-5{transition-delay:.25s}
-
-  /* Disable non-composited animations (box-shadow / background-position) on mobile */
-  .nav__logo-circle{animation:none}
-  .nav__logo-circle::before{animation:none}
-  .hero::after{animation:none}
-
-  /* Soften expensive blurs that are barely visible on small viewports */
-  .nav--scrolled{backdrop-filter:blur(8px)}
-  .mobile-menu{backdrop-filter:blur(10px)}
 }
