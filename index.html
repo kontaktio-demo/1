@@ -159,11 +159,12 @@
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="/o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
-        <li><a href="/galeria" data-scroll-to="galeria">Galeria</a></li>
         <li><a href="/oferta" data-scroll-to="oferta">Oferta</a></li>
         <li><a href="/cennik" data-scroll-to="cennik">Cennik</a></li>
-        <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+        <li><a href="/galeria" data-scroll-to="galeria">Galeria</a></li>
         <li><a href="/transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+        <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+        <li><a href="/faq" data-scroll-to="faq">FAQ</a></li>
         <li><a href="/kontakt" data-scroll-to="kontakt">Kontakt</a></li>
       </ul>
       <a href="/kontakt" class="nav__cta" data-scroll-to="kontakt">Napisz do mnie</a>
@@ -180,10 +181,15 @@
     <ul class="mobile-menu__links">
       <li><a href="/o-mnie" data-scroll-to="o-mnie">O mnie</a></li>
       <li><a href="/galeria" data-scroll-to="galeria">Galeria</a></li>
+      <li><a href="/osiagniecia" data-scroll-to="osiagniecia">Osiągnięcia</a></li>
       <li><a href="/oferta" data-scroll-to="oferta">Oferta</a></li>
+      <li><a href="/jak-to-dziala" data-scroll-to="jak-to-dziala">Jak to działa</a></li>
       <li><a href="/cennik" data-scroll-to="cennik">Cennik</a></li>
-      <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+      <li><a href="/cennik-online" data-scroll-to="cennik-online">Cennik online</a></li>
+      <li><a href="/treningi-podopieczni" data-scroll-to="treningi-podopieczni">Podopieczni</a></li>
       <li><a href="/transformacje" data-scroll-to="transformacje">Transformacje</a></li>
+      <li><a href="/opinie" data-scroll-to="opinie">Opinie</a></li>
+      <li><a href="/faq" data-scroll-to="faq">FAQ</a></li>
       <li><a href="/kontakt" data-scroll-to="kontakt">Kontakt</a></li>
       <li><a href="/kontakt" class="mobile-menu__cta" data-scroll-to="kontakt">Napisz do mnie</a></li>
     </ul>
@@ -978,7 +984,7 @@
   (function() {
     'use strict';
 
-    var SECTIONS = ['hero','o-mnie','galeria','oferta','cennik','opinie','transformacje','kontakt'];
+    var SECTIONS = ['hero','o-mnie','galeria','osiagniecia','oferta','jak-to-dziala','cennik','cennik-online','treningi-podopieczni','transformacje','opinie','faq','kontakt'];
     var SECTION_SET = Object.create(null);
     SECTIONS.forEach(function(s){ SECTION_SET[s] = true; });
 
