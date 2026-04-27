@@ -274,7 +274,11 @@
 
 
   <div class="parallax-divider" data-parallax-bg>
-    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1280&q=70&fit=crop&crop=center" srcset="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=720&q=70&fit=crop&crop=center 720w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1280&q=70&fit=crop&crop=center 1280w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=75&fit=crop&crop=center 1920w" sizes="100vw" alt="" aria-hidden="true" class="parallax-divider__img" loading="lazy" decoding="async" width="1920" height="1080">
+    <picture>
+      <source srcset="photos/parallax-comp.avif" type="image/avif">
+      <source srcset="photos/parallax-comp.webp" type="image/webp">
+      <img src="photos/parallax-comp.webp" alt="" aria-hidden="true" class="parallax-divider__img" loading="lazy" decoding="async" fetchpriority="low" width="1920" height="1080">
+    </picture>
     <div class="parallax-divider__overlay"></div>
     <div class="parallax-divider__content anim-fade-in">
       <span class="parallax-divider__quote">Dyscyplina pokonuje talent,<br>gdy talent nie ma dyscypliny</span>
@@ -416,7 +420,11 @@
 
 
   <div class="parallax-divider parallax-divider--alt" data-parallax-bg>
-    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1280&q=70&fit=crop&crop=center" srcset="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=720&q=70&fit=crop&crop=center 720w, https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1280&q=70&fit=crop&crop=center 1280w, https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=75&fit=crop&crop=center 1920w" sizes="100vw" alt="" aria-hidden="true" class="parallax-divider__img" loading="lazy" decoding="async" width="1920" height="1080">
+    <picture>
+      <source srcset="photos/parallax-training.avif" type="image/avif">
+      <source srcset="photos/parallax-training.webp" type="image/webp">
+      <img src="photos/parallax-training.webp" alt="" aria-hidden="true" class="parallax-divider__img" loading="lazy" decoding="async" fetchpriority="low" width="1920" height="1080">
+    </picture>
     <div class="parallax-divider__overlay"></div>
     <div class="parallax-divider__content anim-fade-in">
       <span class="parallax-divider__quote">Twoje jutro zaczyna się dziś</span>
@@ -1225,10 +1233,17 @@
         });
         ticking = false;
       }
-      window.addEventListener('scroll', function() {
-        if (!ticking) { requestAnimationFrame(updateParallax); ticking = true; }
-      }, { passive: true });
-      updateParallax();
+      var __initParallax = function() {
+        window.addEventListener('scroll', function() {
+          if (!ticking) { requestAnimationFrame(updateParallax); ticking = true; }
+        }, { passive: true });
+        updateParallax();
+      };
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(__initParallax, { timeout: 2000 });
+      } else {
+        setTimeout(__initParallax, 300);
+      }
     }
     var galleryItems = document.querySelectorAll('[data-gallery-reveal]');
     if (galleryItems.length) {
@@ -1246,15 +1261,26 @@
     }
     const particlesContainer = document.getElementById('particles');
     if (particlesContainer) {
-      for (let i = 0; i < 30; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'particle';
-        dot.style.left = Math.random() * 100 + '%';
-        dot.style.top = Math.random() * 100 + '%';
-        dot.style.animationDelay = Math.random() * 6 + 's';
-        dot.style.animationDuration = (4 + Math.random() * 6) + 's';
-        dot.style.width = dot.style.height = (2 + Math.random() * 4) + 'px';
-        particlesContainer.appendChild(dot);
+      var __isMobile = window.matchMedia && window.matchMedia('(max-width:768px)').matches;
+      var __particleCount = __isMobile ? 10 : 30;
+      var __runParticles = function() {
+        var frag = document.createDocumentFragment();
+        for (let i = 0; i < __particleCount; i++) {
+          const dot = document.createElement('div');
+          dot.className = 'particle';
+          dot.style.left = Math.random() * 100 + '%';
+          dot.style.top = Math.random() * 100 + '%';
+          dot.style.animationDelay = Math.random() * 6 + 's';
+          dot.style.animationDuration = (4 + Math.random() * 6) + 's';
+          dot.style.width = dot.style.height = (2 + Math.random() * 4) + 'px';
+          frag.appendChild(dot);
+        }
+        particlesContainer.appendChild(frag);
+      };
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(__runParticles, { timeout: 2000 });
+      } else {
+        setTimeout(__runParticles, 200);
       }
     }
     (function() {
