@@ -232,9 +232,9 @@ body.page-loaded .anim-delay-5{transition-delay:.75s}
 .hero::before{
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.04) 0%, transparent 55%),
-    radial-gradient(ellipse at 70% 80%, rgba(255,255,255,.03) 0%, transparent 55%);
-  opacity:.6;
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.4) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 80%, rgba(255,255,255,.3) 0%, transparent 55%);
+  opacity:.06;
   pointer-events:none;
 }
 .hero::after{
